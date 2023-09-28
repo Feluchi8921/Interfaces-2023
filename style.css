@@ -2,29 +2,31 @@
   margin: 0;
   padding: 0;
 }
+
 .nav {
   width: 100%;
-  height: 80px;
+  height: 40px;
   background: #262626;
   opacity: 90%;
 }
 .container {
-  margin-left: 192px;
-  margin-right: 192px;
   display: grid;
-  grid-template-columns: 25%;
-  grid-template-rows: repeat(10,384px);
+  grid-template-columns: 1;
+  grid-template-rows: repeat(10, 200px);
   grid-template-areas:
-    "section1 section1 section1 section1"
-    "section1 section1 section1 section1"
-    "section2 section2 section2 section2"
-    "section3 section3 section3 section3"
-    "section4 section4 section4 section4"
-    "section5 section5 section5 section5"
-    "section6 section6 section6 section6"
-    "section7 section7 section7 section7"
-    "section7 section7 section7 section7"
-    "section7 section7 section7 section7";
+    "section1"
+    "section1"
+    "section2"
+    "section3"
+    "section4"
+    "section5"
+    "section6"
+    "section7"
+    "section7"
+    "section7"
+    "section8"
+    "section8"
+    "section8";
 }
 
 .section1 {
@@ -55,7 +57,75 @@
   grid-area: section7;
   background: goldenrod;
 }
-.section8 {
+.section8{
+  grid-area: section8;
+  background: pink;
+}
+.section9 {
+  background: rgb(59, 234, 82);
+  height: 150px;
+}
+
+@media only screen and (min-width:900px) {
+.nav {
+  width: 100%;
+  height: 80px;
+  background: #262626;
+  opacity: 90%;
+}
+.container {
+  margin-left: 10%;
+  margin-right: 10%;
+  display: grid;
+  grid-template-columns: 25%;
+  grid-template-rows: repeat(10, 384px);
+  grid-template-areas:
+    "section1 section1 section1 section1"
+    "section1 section1 section1 section1"
+    "section2 section2 section2 section2"
+    "section3 section3 section3 section3"
+    "section4 section4 section4 section4"
+    "section5 section5 section5 section5"
+    "section6 section6 section6 section6"
+    "section7 section7 section8 section8"
+    "section7 section7 section8 section8"
+    "section7 section7 section8 section8";
+}
+
+.section1 {
+  grid-area: section1;
+  background: red;
+}
+.section2 {
+  grid-area: section2;
+  background: blue;
+}
+.section3 {
+  grid-area: section3;
+  background: green;
+}
+.section4 {
+  grid-area: section4;
+  background: yellow;
+}
+.section5 {
+  grid-area: section5;
+  background: purple;
+}
+.section6 {
+  grid-area: section6;
+  background: paleturquoise;
+}
+.section7 {
+  grid-area: section7;
+  background: goldenrod;
+}
+.section8{
+  grid-area: section8;
+  background: pink;
+}
+.section9 {
   background: rgb(59, 234, 82);
   height: 384px;
+}
 }
