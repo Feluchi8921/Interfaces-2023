@@ -23,30 +23,35 @@ section {
     "section7 section7 section7 section7"
     "section8 section8 section8 section8";
 }
-.section1{
-    grid-area: section1;
-    background: red;
+.section1 {
+  grid-area: section1;
+  background: red;
 }
-.section2{
-    grid-area: section2;
-    background: blue;
-}.section3{
-    grid-area: section3;
-    background: green;
-}.section4{
-    grid-area: section4;
-    background: yellow;
-}.section5{
-    grid-area: section5;
-    background: purple;
-}.section6{
-    grid-area: section6;
-    background: paleturquoise;
-}.section7{
-    grid-area: section7;
-    background: goldenrod;
+.section2 {
+  grid-area: section2;
+  background: blue;
 }
-.section8{
-    grid-area: section8;
-    background: rgb(59, 234, 82);
+.section3 {
+  grid-area: section3;
+  background: green;
+}
+.section4 {
+  grid-area: section4;
+  background: yellow;
+}
+.section5 {
+  grid-area: section5;
+  background: purple;
+}
+.section6 {
+  grid-area: section6;
+  background: paleturquoise;
+}
+.section7 {
+  grid-area: section7;
+  background: goldenrod;
+}
+.section8 {
+  grid-area: section8;
+  background: rgb(59, 234, 82);
 }
