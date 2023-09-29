@@ -2,13 +2,145 @@
   margin: 0;
   padding: 0;
 }
+/*------------------------------Colores-----------------------------*/
+:root {
+  --blanco: #f7f7f7f7;
+  --primario: #4E595E;
+  --primarioSombra1: #364045;
+  --primarioSombra2: #262626;
+  --estado:#9FD402;
+  --acento: #F5D221;
+  --peligro:#F53E21
+}
+body{
+  background-color: var(--primarioSombra1);
+}
 
-.nav {
+/*------------------------------Fuentes-----------------------------*/
+h1, h2, h3, p {
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; /* Desp la cambiamos*/
+}
+
+
+h1{
+  font-size: 38px;
+  font-weight: bold;
+}
+
+h2{
+  font-size: 28px;
+  font-weight: bold;
+}
+
+h3{
+  font-size: 24 px;
+  font-weight: bold;
+}
+
+p{
+  font-size: 16px;
+}
+
+p.advertencia{
+  color: var(--peligro);
+  font-size: 9.5px;
+}
+ul li, button{
+  font-size: 14px;
+  list-style: none;
+  justify-content: space-between;
+}
+
+.estado{
+  color: var(--estado);
+  font-weight: bold;
+}
+
+/*------------------------------Nav---------------------------------*/
+nav {
   width: 100%;
   height: 50px;
   background: #262626;
   opacity: 90%;
 }
+
+nav, ul {
+  display: flex;
+}
+nav img{
+  width: 30px;
+  height: 30px;
+  margin: 5px; /*ver como lo centro*/
+}
+nav img.logoPagina{
+  width: 40px;
+  height: 40px;
+  margin: 5px;
+}
+nav.menu ul{
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: space-between;
+  margin:6px;
+  color: #f7f7f7;
+}
+
+/*----Texto----*/
+
+a{
+  text-decoration: none;
+}
+
+
+/*---------------------------Paginas Form--------------------------------*/
+body.form{
+  background-color: var(--blanco);
+  text-align: center;
+}
+.fom h1{
+  color: var(--primarioSombra2);
+}
+.containerFondo{
+  width: 100%;
+  display: block;
+  text-align: center;
+}
+input, button{
+  margin: 6px;
+}
+
+body.form{
+  margin-top: 40px;
+  margin: 20 px;
+  align-items: center;
+  text-align: center;
+}
+
+
+button{
+width: 200px;
+height: 30px;
+background-color: var(--blanco);
+border-radius: 4px;
+
+}
+
+button.continuar{
+  background-color: var(--estado);
+  color: var(--blanco);
+  font-weight: bold;
+}
+
+button.ingresar{
+  text-align: left;
+}
+img.separador{
+  width: 200px;
+  height: 3px;
+}
+
+/*---------------------------Container Mobil-----------------------------*/
 .container {
   display: grid;
   margin-left: 3%;
@@ -67,6 +199,9 @@
   background: rgb(59, 234, 82);
   height: 700px;
 }
+
+
+/*---------------------------------------Media Queria Desktop-------------------------------------------------*/
 
 @media only screen and (min-width:900px) {
 .nav {

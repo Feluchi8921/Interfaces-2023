@@ -6,22 +6,33 @@
     <link rel="stylesheet" type="text/css" href="style.css" />
     <title>Bienvenido</title>
 </head>
-<body>
-    <img src="img/logoPagina.jpg" alt="logo"/>
+<body class="form">
+    <img src="img/logoPaginaBlanco.jpg" alt="logo"/>
     <h1>Bienvenido</h1>
     <div class="containerFondo">
         <div class="containerForm">
             <form>
-                <input type="email" name="email" minlength="" required />
-                <input type="password" name="password" minlength="" required />
+                <div class="inputForm">
+                 <input type="email" name="email" minlength="" required />
+                </div>
+                <div class="inputForm">
+                  <input type="password" name="password" minlength="" required />
+                </div>
             </form>
-            <span class="advertencia">Tu contraseña debe tener al menos 8 caracteres</span>
+            <p class="advertencia">Tu contraseña debe tener al menos 8 caracteres</p>
             <button class="continuar">Continuar</button>
-            <span>¿No tenés cuenta?</span><span>Registrate</span>
+            <div><span>¿No tenés cuenta? </span><span class="estado">Registrate</span></div>
+            <img src="img/separador.jpg" class="separador" alt="separador" />
             <div class="separador"></div>
-            <button class="ingreso"><img src="img/logoGoogle.jpg" alt="logoGoogle" />Continuar con Google</button>
-            <button class="ingreso"><img src="img/logoFacebook.jpg" alt="logoFacebook" />Continuar con Facebook</button>
-            <button class="ingreso"><img src="img/logoApple.jpg" alt="logoApple" />Continuar con Apple</button>
+            <div class="button">
+                <button class="ingresar"><img src="img/logoGoogle.jpg" />Continuar con Google</button>
+            </div>
+            <div>
+                <button class="ingresar"><img src="img/logoFacebook.jpg" />Continuar con Facebook</button>
+            </div>
+            <div>
+                <button class="ingresar"><img src="img/logoApple.jpg" />Continuar con Apple</button>
+            </div>
         </div>
         
     </div>
