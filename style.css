@@ -199,12 +199,19 @@ nav.menu ul {
 
   /*-----------------------------Fuentes-----------------------------*/
 
+  h1{
+    color: #262626;
+  font-size: 58px;
+  font-weight: 600;
+  word-wrap: break-word;
+
+  }
   h2 {
-    color: var(--negro);
-    font-size: 28px;
+    font-size: 42px;
+    font-family: Open Sans;
     font-weight: 700;
     letter-spacing: 3.24px;
-    word-wrap: break;
+    word-wrap: break-word;
   }
 
   h3 {
@@ -227,9 +234,13 @@ nav.menu ul {
     word-wrap: break-word;
   }
 
-  .advertencia {
+  .peligro {
     color: var(--peligro);
-    font-size: 9.5px;
+    font-size: 13px;
+  }
+  .estado {
+    color: var(--estado);
+    font-weight: bold;
   }
 
   ul li,
@@ -243,36 +254,63 @@ nav.menu ul {
     text-decoration: none;
   }
   /*---------------------------Paginas Form--------------------------------*/
-  body.form {
+   .form .logo{
+    width: 106px;
+    height: 106px;
+   }
+   body.form {
     background-color: var(--primarioSombra1);
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
   }
-  .fom h1 {
-    color: var(--primarioSombra2);
-  }
+ 
   .containerFondo {
-    width: 100%;
+    width: 30%;
     display: block;
-    text-align: center;
     flex-wrap: wrap;
+    background-color: var(--blanco);
+    border-radius: 6px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
   input,
   button {
     margin: 6px;
   }
 
+  button img {
+    margin-left: 6px;
+  }
+  span.continuarCon {
+    padding-left: 6px;
+  }
+  ::placeholder {
+    padding-left: 6px;
+  }
+
   body.form {
     margin-top: 40px;
     margin: 20 px;
     align-items: center;
-    text-align: center;
   }
 
-  button {
-    width: 200px;
-    height: 30px;
-    background-color: var(--blanco);
-    border-radius: 4px;
+
+  img.captcha{
+    width: 300px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  button{
+    width: 300px;
+    height: 40px;
+    border-radius: 6px;
+    align-items: center;
   }
 
   button.continuar {
@@ -283,24 +321,28 @@ nav.menu ul {
 
   button.ingresar {
     text-align: left;
+    align-items: center;
   }
   img.separador {
-    width: 200px;
+    width: 300px;
     height: 3px;
+    margin-top: 50px;
+    margin-bottom: 50px;
   }
   .inputForm {
     display: flex;
-    justify-content: center;
-    align-content: center;
     flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
   }
 
-  input.inputform{
+  input.input {
     width: 300px;
-    height: 50px;
+    height: 40px;
+    border-radius: 6px;
   }
-
-
+  
 
   /*---------------------------Pagina Juegos----------------------------------*/
 

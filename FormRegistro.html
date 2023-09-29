@@ -15,7 +15,7 @@
   <body class="form">
     <div class="containerFondo">
       <div class="containerForm">
-        <img src="#" alt="logo" />
+        <img class="logo" src="img/logoPagina.svg" alt="logo" />
         <h2>Crear Cuenta</h2>
         <form>
           <div class="inputForm">
@@ -36,40 +36,40 @@
           </div>
           <div class="inputForm">
             <label for="email">Email</label>
-            <input type="text" required />
+            <input class="input" type="text" required />
           </div>
           <div class="inputForm">
             <label for="contrasenia">Contraseña</label>
-            <input type="password" minlength="8" required />
+            <input class="input" type="password" minlength="8" required />
           </div>
           <div class="inputForm">
             <label for="reptirContraseña">Repetir Contraseña</label>
-            <input type="password" minlength="8" required />
+            <input class="input" type="password" minlength="8" required />
           </div>
         </form>
         <span>
-          <h1>CAPTCHA</h1>
+          <img class="captcha" src="img/captcha.svg" alt="captcha" />
         </span>
         <button class="btn btn-click continuar" type="button">Continuar</button>
         <div>
-          <span>Ya tenes cuenta?<span class="estado">Inicia Sesión</span></span>
+          <span>Ya tenes cuenta?<span class="estado"> Inicia Sesión</span></span>
         </div>
         <img class="separador" src="img/separador.svg" alt="separador" />
         <div class="button">
-          <button class="btn btn-click ingresar" type="button">
-            <img src="img/logoGoogle.svg" alt="" />
-            Continuar con Google
+          <button class="ingresar">
+            <div class="prueba">
+              <img src="img/logoGoogle.svg" /><span class="continuarCon">Continuar con Google</span>
+            </div>
+            </button>
+        </div>
+        <div>
+          <button class="ingresar">
+            <img src="img/logoFacebook.svg" /><span class="continuarCon">Continuar con Facebook</span>
           </button>
         </div>
-        <div class="button">
-          <button class="btn btn-click ingresar" type="button">
-            <img src="img/logoFacebook.svg" alt="" />
-            Continuar con Facebook
-          </button>
-        </div>
-        <div class="button">
-          <button class="btn btn-click ingresar" type="button">
-            <img src="img/logoApple.svg" alt="" />Continuar con Apple
+        <div>
+          <button class="ingresar">
+            <img src="img/logoApple.svg" /><span class="continuarCon">Continuar con Apple</span>
           </button>
         </div>
       </div>
