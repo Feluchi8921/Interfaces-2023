@@ -3,43 +3,69 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
     <title>Crea tu Cuenta</title>
   </head>
-  <body class="">
+  <body class="form">
     <div class="containerFondo">
-      <div class="formContainer">
-        <form class="Form">
-          <img src="#" alt="logo" />
-          <h2>Crear Cuenta</h2>
-          <label for="nombre">Nombre</label>
-          <input type="text" required />
-          <label for="apellido">Apellido</label>
-          <input type="text" required />
-          <label for="nickname">Nickname</label>
-          <input type="text" required />
-          <label for="edad">Edad</label>
-          <input type="number" required />
-          <label for="email">Email</label>
-          <input type="text" required />
-          <label for="contrasenia">Contraseña</label>
-          <input type="password" minlength="8" required />
-          <label for="reptirContraseña">Repetir Contraseña</label>
-          <input type="password" minlength="8" required />
+      <div class="containerForm">
+        <img src="#" alt="logo" />
+        <h2>Crear Cuenta</h2>
+        <form>
+          <div class="inputForm">
+            <label for="nombre">Nombre</label>
+            <input type="text" required />
+          </div>
+          <div class="inputForm">
+            <label for="apellido">Apellido</label>
+            <input type="text" required />
+          </div>
+          <div class="inputForm">
+            <label for="nickname">Nickname</label>
+            <input type="text" required />
+          </div>
+          <div class="inputForm">
+            <label for="edad">Edad</label>
+            <input type="number" required />
+          </div>
+          <div class="inputForm">
+            <label for="email">Email</label>
+            <input type="text" required />
+          </div>
+          <div class="inputForm">
+            <label for="contrasenia">Contraseña</label>
+            <input type="password" minlength="8" required />
+          </div>
+          <div class="inputForm">
+            <label for="reptirContraseña">Repetir Contraseña</label>
+            <input type="password" minlength="8" required />
+          </div>
         </form>
-        <span><h1>CAPTCHA</h1></span>
-        <button class="btn btn-click" type="button">Continuar</button>
-        <span
-          >Ya tenes cuenta?
-          <span class="iniciaSesion">Inicia Sesión</span></span
-        >
-        <img src="#" alt="separador" />
-        <button class="btn btn-click" type="button">
-          Continuar con Google
-        </button>
-        <button class="btn btn-click" type="button">
-          Continuar con Facebook
-        </button>
-        <button class="btn btn-click" type="button">Continuar con Apple</button>
+        <span>
+          <h1>CAPTCHA</h1>
+        </span>
+        <button class="btn btn-click continuar" type="button">Continuar</button>
+        <div>
+          <span>Ya tenes cuenta?<span class="estado">Inicia Sesión</span></span>
+        </div>
+        <img class="separador" src="img/separador.svg" alt="separador" />
+        <div class="button">
+          <button class="btn btn-click ingresar" type="button">
+            <img src="img/logoGoogle.svg" alt="" />
+            Continuar con Google
+          </button>
+        </div>
+        <div class="button">
+          <button class="btn btn-click ingresar" type="button">
+            <img src="img/logoFacebook.svg" alt="" />
+            Continuar con Facebook
+          </button>
+        </div>
+        <div class="button">
+          <button class="btn btn-click ingresar" type="button">
+            <img src="img/logoApple.svg" alt="" />Continuar con Apple
+          </button>
+        </div>
       </div>
     </div>
   </body>
