@@ -258,7 +258,7 @@ a{
 }
 /*---------------------------Paginas Form--------------------------------*/
 body.form{
-  background-color: var(--blanco);
+  background-color: var(--primarioSombra1);
   text-align: center;
 }
 .fom h1{
