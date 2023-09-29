@@ -202,9 +202,6 @@ nav.menu ul{
 }
 
 /*-----------------------------Fuentes-----------------------------*/
-h1, h2, h3, p {
-  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; /* Desp la cambiamos*/
-}
 
 h2{
   color: var(--blanco);
