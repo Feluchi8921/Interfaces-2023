@@ -295,6 +295,10 @@ nav.menu ul {
     flex-direction: column;
   }
 
+  .inputForm:hover{
+  
+  }
+
   /*---------------------------Pagina Juegos----------------------------------*/
 
   /*------Layouts Juegos----------*/
