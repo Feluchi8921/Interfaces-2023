@@ -239,32 +239,34 @@ nav.menu ul {
     justify-content: space-between;
   }
 
-a{
-  text-decoration: none;
-}
-/*---------------------------Paginas Form--------------------------------*/
-body.form{
-  background-color: var(--primarioSombra1);
-  text-align: center;
-}
-.fom h1{
-  color: var(--primarioSombra2);
-}
-.containerFondo{
-  width: 100%;
-  display: block;
-  text-align: center;
-}
-input, button{
-  margin: 6px;
-}
+  a {
+    text-decoration: none;
+  }
+  /*---------------------------Paginas Form--------------------------------*/
+  body.form {
+    background-color: var(--primarioSombra1);
+    text-align: center;
+  }
+  .fom h1 {
+    color: var(--primarioSombra2);
+  }
+  .containerFondo {
+    width: 100%;
+    display: block;
+    text-align: center;
+    flex-wrap: wrap;
+  }
+  input,
+  button {
+    margin: 6px;
+  }
 
-body.form{
-  margin-top: 40px;
-  margin: 20 px;
-  align-items: center;
-  text-align: center;
-}
+  body.form {
+    margin-top: 40px;
+    margin: 20 px;
+    align-items: center;
+    text-align: center;
+  }
 
   button {
     width: 200px;
@@ -279,14 +281,19 @@ body.form{
     font-weight: bold;
   }
 
-button.ingresar{
-  text-align: left;
-}
-img.separador{
-  width: 200px;
-  height: 3px;
-}
-
+  button.ingresar {
+    text-align: left;
+  }
+  img.separador {
+    width: 200px;
+    height: 3px;
+  }
+  .inputForm {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+  }
 
   /*---------------------------Pagina Juegos----------------------------------*/
 
