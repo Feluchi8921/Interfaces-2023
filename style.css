@@ -17,9 +17,7 @@ body{
 }
 
 /*------------------------------Fuentes-----------------------------*/
-h1, h2, h3, p {
-  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; /* Desp la cambiamos*/
-}
+
 
 
 h1{
@@ -41,20 +39,7 @@ p{
   font-size: 16px;
 }
 
-p.advertencia{
-  color: var(--peligro);
-  font-size: 9.5px;
-}
-ul li, button{
-  font-size: 14px;
-  list-style: none;
-  justify-content: space-between;
-}
 
-.estado{
-  color: var(--estado);
-  font-weight: bold;
-}
 
 /*------------------------------Nav---------------------------------*/
 nav {
@@ -264,5 +249,89 @@ img.separador{
 .section9 {
   background: rgb(59, 234, 82);
   height: 384px;
+}
+
+/*-----------------------------Fuentes-----------------------------*/
+h1, h2, h3, p {
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; /* Desp la cambiamos*/
+}
+
+h2{
+  color: var(--blanco);
+  font-size: 54px;
+  font-weight: 700;
+  letter-spacing: 3.24px;
+  word-wrap: break
+}
+
+h3{
+  color: var(--acento);
+  font-size: 30px;
+  font-weight: 400;
+  word-wrap: break-word
+}
+h3{
+  color: var(--blanco);
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 1.60px;
+  word-wrap: break-word
+}
+p.textoBody{
+  color: white;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 1.60px;
+  word-wrap: break-word
+}
+
+.advertencia{
+  color: var(--peligro);
+  font-size: 9.5px;
+}
+ul li, button{
+  font-size: 14px;
+  list-style: none;
+  justify-content: space-between;
+}
+
+/*---------------------------Pagina Juegos----------------------------------*/
+.containerJuegos {
+  margin-left: 10%;
+  margin-right: 10%;
+  width: 100%;
+  background-color: var(--primarioSombra2);
+}
+
+.containerJuegos, sidebar.sidebarVideos, sidebar .sidebarJuego{
+  display: block;
+}
+
+.breadcrumb, section.sectionJuego, section.sectionRecomedados, section .sectionComentarios{
+  display: flex;
+}
+section.sectionJuego, section.seccionRecomendados, section.sectionComentarios{
+  width: 1536px;
+}
+section.sectionJuego{
+  height: 1300px;
+}
+
+sidebar.sidebarJuegoInstrucciones{
+  width: 1000px;
+  height: 1300 px;
+}
+
+sidebar.sidebarVideos{
+    width: 1280px;
+    height: 1300px;
+}
+
+section.seccionRecomendados{
+  height: 400px;
+}
+
+section.sectionComentarios{
+  height: 1350px;
 }
 }
