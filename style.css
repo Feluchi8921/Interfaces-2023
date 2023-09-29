@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: "Open Sans";
 }
 /*------------------------------Colores-----------------------------*/
 :root {
@@ -238,39 +239,32 @@ nav.menu ul {
     justify-content: space-between;
   }
 
-  a {
-    text-decoration: none;
-  }
-  /*---------------------------Paginas Form--------------------------------*/
-  body.form {
-    background-color: var(--primarioSombra1);
-    text-align: center;
-  }
-  .fom h1 {
-    color: var(--primarioSombra2);
-  }
-  .containerFondo {
-    width: 100%;
-    display: block;
-    text-align: center;
-  }
-  input,
-  button {
-    margin: 6px;
-  }
+a{
+  text-decoration: none;
+}
+/*---------------------------Paginas Form--------------------------------*/
+body.form{
+  background-color: var(--primarioSombra1);
+  text-align: center;
+}
+.fom h1{
+  color: var(--primarioSombra2);
+}
+.containerFondo{
+  width: 100%;
+  display: block;
+  text-align: center;
+}
+input, button{
+  margin: 6px;
+}
 
-  .input, button.ingresar, button.continuar{
-    width: 300px;
-    height: 50px;
-    border-radius: 6px;
-  }
-
-  body.form {
-    margin-top: 40px;
-    margin: 20 px;
-    align-items: center;
-    text-align: center;
-  }
+body.form{
+  margin-top: 40px;
+  margin: 20 px;
+  align-items: center;
+  text-align: center;
+}
 
   button {
     width: 200px;
@@ -285,13 +279,14 @@ nav.menu ul {
     font-weight: bold;
   }
 
-  button.ingresar {
-    text-align: left;
-  }
-  img.separador {
-    width: 200px;
-    height: 3px;
-  }
+button.ingresar{
+  text-align: left;
+}
+img.separador{
+  width: 200px;
+  height: 3px;
+}
+
 
   /*---------------------------Pagina Juegos----------------------------------*/
 
