@@ -76,14 +76,30 @@ ul.barraNav.show, .menu {
   display: flex;
 }
 
-nav ul li {
-  margin: 2%;
-}
 
-a {
+a, ul, li {
   text-decoration: none;
+  list-style: none;
+}
+.btn-nav {
+  width: max-content;
+  height: max-content;
+  margin-left: 6px;
+  background-color: transparent;
+  color: var(--blanco);
+  border: transparent;
+  align-items: center;
 }
 
+.fechaAbajo {
+  width: 12px;
+  height: 6px;
+}
+.desplegable{
+  width: min-content;
+  height: min-content;
+  background-color: var(--primarioSombra2);
+}
 /*---------------------------Container Mobil-----------------------------*/
 .container {
   display: grid;
