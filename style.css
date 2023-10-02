@@ -499,7 +499,7 @@ a {
     display: none;
   }
   .navDesktop{
-    display: contents;
+    display: flex;
   }
   .nav {
     width: 100%;
