@@ -128,8 +128,11 @@ nav.menu ul {
   background: pink;
 }
 .footer {
-  background: rgb(59, 234, 82);
-  height: 700px;
+  background: var(--primarioSombra2);
+  color: var(--blanco);
+  height: 380px;
+  display: flex;
+  align-content: space-between;
 }
 
 /*---------------------------------------Media Queria Desktop-------------------------------------------------*/
@@ -199,12 +202,11 @@ nav.menu ul {
 
   /*-----------------------------Fuentes-----------------------------*/
 
-  h1{
+  h1 {
     color: #262626;
-  font-size: 58px;
-  font-weight: 600;
-  word-wrap: break-word;
-
+    font-size: 58px;
+    font-weight: 600;
+    word-wrap: break-word;
   }
   h2 {
     font-size: 42px;
@@ -254,11 +256,11 @@ nav.menu ul {
     text-decoration: none;
   }
   /*---------------------------Paginas Form--------------------------------*/
-   .form .logo{
+  .form .logo {
     width: 106px;
     height: 106px;
-   }
-   body.form {
+  }
+  body.form {
     background-color: var(--primarioSombra1);
     text-align: center;
     display: flex;
@@ -267,7 +269,7 @@ nav.menu ul {
     margin-top: 50px;
     margin-bottom: 50px;
   }
- 
+
   .containerFondo {
     width: 30%;
     display: block;
@@ -300,13 +302,12 @@ nav.menu ul {
     align-items: center;
   }
 
-
-  img.captcha{
+  img.captcha {
     width: 300px;
     margin-top: 50px;
     margin-bottom: 50px;
   }
-  button{
+  button {
     width: 300px;
     height: 40px;
     border-radius: 6px;
@@ -342,7 +343,6 @@ nav.menu ul {
     height: 40px;
     border-radius: 6px;
   }
-  
 
   /*---------------------------Pagina Juegos----------------------------------*/
 
@@ -426,7 +426,6 @@ nav.menu ul {
     width: 316px;
   }
 
-
   sidebar.siderbarJuegoInstrucciones div.instrucciones {
     /*revisar no me lo toma*/
     background-color: var(--primarioSombra3);
@@ -481,20 +480,58 @@ nav.menu ul {
     height: 30px;
     border-radius: 0%;
   }
-  .botoneraRedes ul{
+  .botoneraRedes ul {
     justify-content: end;
     align-items: center;
     margin: 2px;
   }
-  .botoneraComentarios li{
+  .botoneraComentarios li {
     align-items: center;
     margin: 10px;
     padding: 10x;
     width: max-content;
   }
-  img.redes{
+  img.redes {
     width: 15px;
     height: 15px;
     margin-bottom: 8px;
   }
+}
+/*------Footer----------*/
+
+.footer {
+  background: var(--primarioSombra2);
+  color: var(--blanco);
+  height: 380px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.footerContainerMaster {
+  display: flex;
+  justify-content: space-between;
+}
+.footerContainerMaster div:first-child {
+  margin-left: 10%;
+}
+.footerContainerMaster div:last-child {
+  margin-right: 10%;
+}
+.footerContainer {
+  display: flex;
+  flex-direction: column;
+}
+.footerContainer span {
+  padding: 5px;
+}
+
+.footerContainer.contactanos:first-child {
+  display: inline-block;
+}
+
+.footerlegales span {
+  color: var(--primarioSombra1);
+  font-size: 13px;
+  margin-left: 10%;
+  padding: 10px;
 }
