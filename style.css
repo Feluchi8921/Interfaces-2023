@@ -42,6 +42,13 @@ p {
 }
 
 /*------------------------------Nav---------------------------------*/
+.navDesktop{
+  display: none;
+}
+.navMobil{
+  display: flex;
+}
+
 nav {
   width: 100%;
   height: 50px;
@@ -49,10 +56,6 @@ nav {
   opacity: 90%;
 }
 
-nav,
-ul {
-  display: flex;
-}
 nav img {
   width: 30px;
   height: 30px;
@@ -63,13 +66,22 @@ nav img.logoPagina {
   height: 40px;
   margin: 5px;
 }
-nav.menu ul {
+
+ul.barraNav {
+  display: none;
+  flex-direction: column;
+}
+
+ul.barraNav.show, .menu {
   display: flex;
-  flex-direction: row;
-  list-style: none;
-  justify-content: space-between;
-  margin: 6px;
-  color: #f7f7f7;
+}
+
+nav ul li {
+  margin: 2%;
+}
+
+a {
+  text-decoration: none;
 }
 
 /*---------------------------Container Mobil-----------------------------*/
@@ -135,7 +147,6 @@ nav.menu ul {
 /*---------------------------------------Media Queria Desktop-------------------------------------------------*/
 
 @media only screen and (min-width: 900px) {
- 
   .container {
     margin-left: 10%;
     margin-right: 10%;
@@ -194,12 +205,11 @@ nav.menu ul {
 
   /*-----------------------------Fuentes-----------------------------*/
 
-  h1{
+  h1 {
     color: #262626;
-  font-size: 58px;
-  font-weight: 600;
-  word-wrap: break-word;
-
+    font-size: 58px;
+    font-weight: 600;
+    word-wrap: break-word;
   }
   h2 {
     font-size: 42px;
@@ -238,22 +248,17 @@ nav.menu ul {
     font-weight: bold;
   }
 
-  ul li,
-  button {
-    font-size: 14px;
-    list-style: none;
-    justify-content: space-between;
-  }
 
   a {
     text-decoration: none;
   }
+
   /*---------------------------Paginas Form--------------------------------*/
-   .form .logo{
+  .form .logo {
     width: 106px;
     height: 106px;
-   }
-   body.form {
+  }
+  body.form {
     background-color: var(--primarioSombra1);
     text-align: center;
     display: flex;
@@ -262,7 +267,7 @@ nav.menu ul {
     margin-top: 50px;
     margin-bottom: 50px;
   }
- 
+
   .containerFondo {
     width: 30%;
     display: block;
@@ -295,13 +300,12 @@ nav.menu ul {
     align-items: center;
   }
 
-
-  img.captcha{
+  img.captcha {
     width: 300px;
     margin-top: 50px;
     margin-bottom: 50px;
   }
-  button{
+  button {
     width: 300px;
     height: 40px;
     border-radius: 6px;
@@ -337,7 +341,6 @@ nav.menu ul {
     height: 40px;
     border-radius: 6px;
   }
-  
 
   /*---------------------------Pagina Juegos----------------------------------*/
 
@@ -421,7 +424,6 @@ nav.menu ul {
     width: 316px;
   }
 
-
   sidebar.siderbarJuegoInstrucciones div.instrucciones {
     /*revisar no me lo toma*/
     background-color: var(--primarioSombra3);
@@ -475,80 +477,88 @@ nav.menu ul {
     height: 30px;
     border-radius: 0%;
   }
-  .botoneraRedes ul{
+  .botoneraRedes ul {
     justify-content: end;
     align-items: center;
     margin: 2px;
   }
-  .botoneraComentarios li{
+  .botoneraComentarios li {
     align-items: center;
     margin: 10px;
     padding: 10x;
     width: max-content;
   }
-  img.redes{
+  img.redes {
     width: 15px;
     height: 15px;
     margin-bottom: 8px;
   }
 
   /*-----------------nav----------------*/
+  .navMobil{
+    display: none;
+  }
+  .navDesktop{
+    display: contents;
+  }
   .nav {
     width: 100%;
     height: 80px;
     background: #262626;
     opacity: 90%;
   }
-  .btn-nav{
+  .btn-nav {
     width: max-content;
     height: max-content;
     margin-left: 6px;
-    background-color:transparent;
+    background-color: transparent;
     color: var(--blanco);
     border: transparent;
     align-items: center;
   }
-  .justifyFlexStart, .alignCenter, .justifyFlexEnd{
+  .justifyFlexStart,
+  .alignCenter,
+  .justifyFlexEnd {
     display: flex;
   }
-  .justifyFlexStart{
+  .justifyFlexStart {
     justify-content: flex-start;
-  } 
-  .justifyFlexEnd{
+  }
+  .justifyFlexEnd {
     justify-content: flex-end;
-  } 
-  .alignCenter{
+  }
+  .alignCenter {
     align-items: center;
   }
-  .marginNavLeft{
-      margin-left: 10%;
+  .marginNavLeft {
+    margin-left: 10%;
   }
-  .marginNavRight{
+  .marginNavRight {
     margin-right: 10%;
-    margin-left: 500px;                                             /*ver*/
+    margin-left: 500px; /*ver*/
   }
-  .logoHamburguesa{
+  .logoHamburguesa {
     height: 25px;
     width: 25px;
     align-items: center;
   }
-  .logoNav{
+  .logoNav {
     height: 40px;
     width: 40px;
     align-items: center;
   }
 
-  .fechaAbajo{
-      width: 12px;
-      height: 6px;
+  .fechaAbajo {
+    width: 12px;
+    height: 6px;
   }
-  .lupaNav{
+  .lupaNav {
     color: var(--primario);
     width: 12px;
     height: 12px;
     padding: 2px;
   }
-  .barraBusqueda{
+  .barraBusqueda {
     background-color: var(--blanco);
     align-items: center;
     height: 22px;
@@ -558,17 +568,19 @@ nav.menu ul {
     border-radius: 6px;
     background-color: var(--blanco);
   }
-  input.busquedaNav, .lupaNav{
+  input.busquedaNav,
+  .lupaNav {
     margin: 0px;
     align-items: center;
     height: min-content;
   }
-  input.busquedaNav{
-    border:transparent;
+  input.busquedaNav {
+    border: transparent;
     background-color: var(--blanco);
   }
-.logoCarritoMas1{
-  width: 25px;
-  height: 25px; 
-  align-items: center;
+  .logoCarritoMas1 {
+    width: 25px;
+    height: 25px;
+    align-items: center;
+  }
 }
