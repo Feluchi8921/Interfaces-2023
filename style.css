@@ -577,6 +577,7 @@ a, ul, li {
   }
   .navDesktop{
     display: flex;
+    justify-content: space-between;
   }
   .nav {
     width: 100%;
@@ -612,7 +613,7 @@ a, ul, li {
   }
   .marginNavRight {
     margin-right: 10%;
-    margin-left: 500px; /*ver*/
+    /*ver*/
   }
   .logoHamburguesa {
     height: 25px;
