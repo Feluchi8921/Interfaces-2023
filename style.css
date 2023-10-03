@@ -78,14 +78,7 @@ nav img.logoNav{
   height: 40px;
   align-items: center;
 }
-ul.barraNav {
-  display: none;
-  flex-direction: column;
-}
 
-ul.barraNav.show, .menu {
-  display: flex;
-}
 
 
 a, ul, li {
@@ -107,6 +100,16 @@ a, ul, li {
   height: 6px;
 }
 /*---Desplegable---*/
+
+
+.desplegable.show {
+  display: flex;
+}
+
+.desplegable.cerrar{ /*cierro el desplegable*/
+  display: none;
+}
+
 .desplegable{
   width: min-content;
   height: min-content;
@@ -114,13 +117,67 @@ a, ul, li {
   display: none;
   position: absolute;
   min-width: 0px;
+  padding: 10px;
+}
+.desplegableUsuario{
+  position: absolute;
+  left: -30px;
+}
+.desplegableCarrito{
+  position: absolute;
+  left: -160px;
+  width: max-content;
 }
 
+.desplegableCarrito img.producto{
+  width: 80px;
+  height: auto;
+  border-radius: 4px;
+}
+
+.desplegableCarrito img.separador{
+  width: 200px;
+}
+.alignCenter{
+  display: flex;
+  align-items: center;
+}
+.justifyCenter{
+  display: flex;
+  justify-content: center;
+}
+
+.productoPrecio{
+  display: flex;
+  justify-content: center;
+}
+button.ingresar, button.continuar{
+  width: max-content;
+  height: max-content;
+  border-radius: 6px;
+  align-items: center;
+  padding: 6px;
+  background-color: var(--estado);
+  color: var(--blanco);
+}
+
+.siri{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.btn-menu{
+  display: none;
+}
 .dropdown {
   position: relative;
   display: inline-block;
 }
-
+img.cruz{
+  width: 15px;
+  height: 15px;
+  margin-left: 80px;
+}
 
 .dropdown:hover .desplegable {
   display: block;
@@ -613,7 +670,6 @@ a, ul, li {
   }
   .marginNavRight {
     margin-right: 10%;
-    /*ver*/
   }
   .logoHamburguesa {
     height: 25px;
@@ -661,7 +717,27 @@ a, ul, li {
     height: 25px;
     align-items: center;
   }
-}
+
+  /*---Desplegable---*/
+  .desplegable.show {
+    display: flex;
+  }
+  .desplegable{
+    width: min-content;
+    height: min-content;
+    background-color: var(--primarioSombra2);
+    display: none;
+    position: absolute;
+    min-width: 0px;
+    padding: 10px;
+  }
+  .siri{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+
 /*------Footer----------*/
 
 .footer {
