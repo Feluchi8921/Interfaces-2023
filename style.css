@@ -162,6 +162,8 @@ button.ingresar, button.continuar{
 button.continuar{
   background-color: var(--acento);
 }
+
+
 button.ingresar{
   background-color: var(--blanco);
 }
@@ -348,6 +350,7 @@ img.cruz{
     font-weight: 400;
     word-wrap: break-word;
   }
+
   p.textoBody {
     color: white;
     font-size: 20px;
@@ -654,6 +657,7 @@ img.cruz{
     color: var(--blanco);
     border: transparent;
     align-items: center;
+    font-size: 16px;
   }
   .justifyFlexStart,
   .alignCenter,
@@ -743,19 +747,30 @@ img.cruz{
  .item{
   display: flex;
   justify-content: flex-start;
-  align-items: center;
+  align-items: left;
  }
 
  .item img.item{
-      width: 15px;
-      height: 15px;
+      width: 30px;
+      height: 30px;
+
  }
 
 img.separadorDesplegable {
   width: min-content;
 }
 
-
+button.continuarDesplegable{
+  border-radius: 6px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6px;
+  color: var(--blanco);
+  width: min-content;
+  height: min-content;
+  background-color: var(--estado);
+}
 /*------Footer----------*/
 
 .footer {
