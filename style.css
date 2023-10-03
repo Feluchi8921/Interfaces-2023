@@ -157,10 +157,14 @@ button.ingresar, button.continuar{
   border-radius: 6px;
   align-items: center;
   padding: 6px;
-  background-color: var(--estado);
   color: var(--blanco);
 }
-
+button.continuar{
+  background-color: var(--acento);
+}
+button.ingresar{
+  background-color: var(--blanco);
+}
 .siri{
   display: flex;
   justify-content: center;
