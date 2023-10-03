@@ -736,6 +736,20 @@ img.cruz{
     justify-content: center;
     align-items: flex-start;
   }
+ .item{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+ }
+
+ .item img.item{
+      width: 15px;
+      height: 15px;
+ }
+
+img.separadorDesplegable {
+  width: min-content;
+}
 
 
 /*------Footer----------*/
@@ -787,4 +801,5 @@ img.cruz{
 
 .acento2{
   color: var(--acento2)
+}
 }
