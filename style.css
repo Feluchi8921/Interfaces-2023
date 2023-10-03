@@ -15,6 +15,7 @@
   --acento: #f5d221;
   --peligro: #f53e21;
   --secundarioLuz1: #74a8ab;
+  --acento2: #BC3DC2;
 }
 body {
   background-color: var(--primarioSombra1);
@@ -366,7 +367,7 @@ a, ul, li {
     margin-top: 50px;
     margin-bottom: 50px;
   }
-  button {
+  button.ingresar, button.continuar{
     width: 300px;
     height: 40px;
     border-radius: 6px;
@@ -529,20 +530,36 @@ a, ul, li {
   div.botoneraRedes {
     background-color: var(--secundarioLuz1);
     width: 800px;
+    height: 50px;
     margin: 0%;
     border-radius: 6px;
     padding: 0%;
   }
-  div.botoneraRedes img {
+  .div.botoneraRedes img {
     width: 30px;
     height: 30px;
     border-radius: 0%;
+    background-color: transparent;
   }
-  .botoneraRedes ul {
-    justify-content: end;
+
+
+  .siderbarJuegoInstrucciones .botoneraRedes{
+    display: flex;
+    justify-content: flex-end;
     align-items: center;
     margin: 2px;
   }
+  button.redesJuego{
+    background-color: transparent;
+    border:transparent;
+  }
+  .redesJuego img{
+    width: 20px;
+    height: 20px;
+    border-radius: 0%;
+    margin: 0%;
+  }
+
   .botoneraComentarios li {
     align-items: center;
     margin: 10px;
@@ -550,9 +567,8 @@ a, ul, li {
     width: max-content;
   }
   img.redes {
-    width: 15px;
-    height: 15px;
-    margin-bottom: 8px;
+    width: 20x;
+    height: 20px;
   }
 
   /*-----------------nav----------------*/
@@ -682,4 +698,16 @@ a, ul, li {
   font-size: 13px;
   margin-left: 10%;
   padding: 10px;
+}
+
+.contactanos{
+  display: flex;
+}
+
+.redesFooter{
+  display: block;
+}
+
+.acento2{
+  color: var(--acento2)
 }
