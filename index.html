@@ -9,53 +9,112 @@
   <body>
     <header>
       <nav>
-         <!---Barra Nav Mobil-->
-         <div class="navMobil">
-          <div class="btn-menu"><img src="img/logoPagina.svg" class="logoNav" alt="logoPagina" /></div>
-          <div class="desplegable">
-            <ul class="barraNav">
-              <li><button class="btn-nav"><a>Categorías</a><img src="img/fechaAbajo.svg" class="fechaAbajo" /></button></li>
-              <li><button class="btn-nav"><a>Comunidad</a><img src="img/fechaAbajo.svg" class="fechaAbajo" /></button></li>
-              <li><button class="btn-nav"><a>Soporte</a><img src="img/fechaAbajo.svg" class="fechaAbajo" /></button></li>
-            </ul>
+        <!---Barra Nav Mobil-->
+        <div class="navMobil">
+          <div class="btn-nav dropdown">
+            <div class="btn-menu dropdown">
+              <img
+                src="img/logoHamburguesa.svg"
+                class="logoHamburguesa"
+                alt="logoHamburguesa"
+              />
+            </div>
+            <div class="desplegable">
+              <ul class="barraNav">
+                <li>
+                  <button class="btn-nav">
+                    <a>Mis juegos</a
+                    ><img src="img/fechaAbajo.svg" class="fechaAbajo rotar" />
+                  </button>
+                </li>
+                <li>
+                  <button class="btn-nav">
+                    <a>Acción</a
+                    ><img src="img/fechaAbajo.svg" class="fechaAbajo rotar" />
+                  </button>
+                </li>
+                <li>
+                  <button class="btn-nav">
+                    <a>Aventura</a
+                    ><img src="img/fechaAbajo.svg" class="fechaAbajo rotar" />
+                  </button>
+                </li>
+                <li>
+                  <button class="btn-nav">
+                    <a>Carreras</a
+                    ><img src="img/fechaAbajo.svg" class="fechaAbajo rotar" />
+                  </button>
+                </li>
+                <li>
+                  <button class="btn-nav">
+                    <a>Multijugador</a
+                    ><img src="img/fechaAbajo.svg" class="fechaAbajo rotar" />
+                  </button>
+                </li>
+                <li>
+                  <button class="btn-nav">
+                    <a>Deporte</a
+                    ><img src="img/fechaAbajo.svg" class="fechaAbajo rotar" />
+                  </button>
+                </li>
+              </ul>
+            </div>
+            <img src="img/logoPagina.svg" class="logoNav" alt="logoPagina" />
           </div>
-        </div>
-          <!----Barra Nav Desktop-->
-          <div class="navDesktop">
-        <div class="justifyFlexStart alignCenter marginNavLeft">
-          <img
-            src="img/logoHamburguesa.svg"
-            class="logoHamburguesa"
-            alt="logoHamburguesa"
-          />
-          <img src="img/logoPagina.svg" class="logoNav" alt="logoPagina" />
-          <button class="btn-nav">
-            <a>Categorías</a><img src="img/fechaAbajo.svg" class="fechaAbajo" />
-          </button>
-          <button class="btn-nav">
-            <a>Comunidad</a><img src="img/fechaAbajo.svg" class="fechaAbajo" />
-          </button>
-          <button class="btn-nav">
-            <a>Soporte</a><img src="img/fechaAbajo.svg" class="fechaAbajo" />
-          </button>
-          <div class="barraBusqueda">
-            <input class="busquedaNav" /><img
-              src="img/lupaNav.svg"
-              class="lupaNav"
-            />
-          </div>
-        </div>
-        <div class="justifyFlexEnd alignCenter marginNavRight">
-          <div class="justifyCenter alignCenter">
+          
+
+          <div class="usuario">
             <img src="img/siri98.svg" class="avatar" /><button class="btn-nav">
               <a>Siri98</a><img src="img/fechaAbajo.svg" class="fechaAbajo" />
             </button>
+
+            <button class="btn-nav">
+              <img src="img/logoCarritoMas1.svg" class="logoCarritoMas1" />
+            </button>
           </div>
-          <button class="btn-nav">
-            <img src="img/logoCarritoMas1.svg" class="logoCarritoMas1" />
-          </button>
+
+          
         </div>
-      </div>
+        <!----Barra Nav Desktop-->
+        <div class="navDesktop">
+          <div class="justifyFlexStart alignCenter marginNavLeft">
+            <img
+              src="img/logoHamburguesa.svg"
+              class="logoHamburguesa"
+              alt="logoHamburguesa"
+            />
+            <img src="img/logoPagina.svg" class="logoNav" alt="logoPagina" />
+            <button class="btn-nav">
+              <a>Categorías</a
+              ><img src="img/fechaAbajo.svg" class="fechaAbajo" />
+            </button>
+            <button class="btn-nav">
+              <a>Comunidad</a
+              ><img src="img/fechaAbajo.svg" class="fechaAbajo" />
+            </button>
+            <button class="btn-nav">
+              <a>Soporte</a><img src="img/fechaAbajo.svg" class="fechaAbajo" />
+            </button>
+            <div class="barraBusqueda">
+              <input class="busquedaNav" /><img
+                src="img/lupaNav.svg"
+                class="lupaNav"
+              />
+            </div>
+          </div>
+          <div class="justifyFlexEnd alignCenter marginNavRight">
+            <div class="justifyCenter alignCenter">
+              <img src="img/siri98.svg" class="avatar" /><button
+                class="btn-nav"
+              >
+                <a>Siri98</a><img src="img/fechaAbajo.svg" class="fechaAbajo" />
+              </button>
+            </div>
+            <button class="btn-nav">
+              <img src="img/logoCarritoMas1.svg" class="logoCarritoMas1" />
+            </button>
+          </div>
+        </div>
       </nav>
     </header>
     <div class="container">
