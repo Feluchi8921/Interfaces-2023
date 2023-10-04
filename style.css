@@ -16,6 +16,7 @@
   --peligro: #f53e21;
   --secundarioLuz1: #74a8ab;
   --acento2: #bc3dc2;
+  --secundario: #318185;
 }
 body {
   background-color: var(--primarioSombra1);
@@ -812,6 +813,9 @@ footer .desktop{
   .acento2 {
     color: var(--acento2);
   }
+  .acento{
+    color: var(--acento);
+  }
 
   .primario {
     color: var(--primario);
@@ -837,4 +841,52 @@ footer .desktop{
     align-items: flex-end;
     margin-right: 10%;
   }
+
+  /*----card mas jugados-------*/
+  .masJugados{
+    width: 600px;
+    height: 100px;
+    display: flex;
+    padding: 0%;
+    margin-bottom: 10px;
+    border-radius: 10px;
+  }
+.masJugadosImagen, .masJugadosImagen img{
+ width: 150px;
+ height: 100px;
+}
+
+.masJugadosContenido{
+  width: 100%;
+  background-color: var(--secundario);
+  display: flex;
+}
+.titulo{
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  font-size: 18px;
+  color: var(--blanco);
+  margin-right: 200px;
+  font-weight: bolder;
+  width: 100%;
+  
+}
+
+.precio{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+.masJugados span.acento{
+  margin: 10px;
+  font-weight: bolder;
+
+}
+
+.parCards{
+  display: flex;
+  justify-content: space-around;
+}
 }
