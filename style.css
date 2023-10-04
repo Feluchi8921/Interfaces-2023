@@ -76,12 +76,6 @@ nav,
   margin-right: 10px;
 }
 
-a,
-ul,
-li {
-  text-decoration: none;
-  list-style: none;
-}
 .btn-nav {
   width: max-content;
   height: max-content;
@@ -490,6 +484,7 @@ footer .desktop{
   }
   .containerJuegos {
     margin-left: 10%;
+    margin-right: 10%;
     background-color: var(--primarioSombra1);
   }
 
@@ -508,7 +503,7 @@ footer .desktop{
   section.sectionJuego,
   section.seccionRecomendados,
   section.sectionComentarios {
-    width: 1536px;
+  
   }
   section.sectionJuego {
     height: 1300px;
@@ -867,12 +862,14 @@ footer .desktop{
 .masJugadosImagen, .masJugadosImagen img{
  width: 150px;
  height: 100px;
+ border-radius: 10px 0px 0px 10px;
 }
 
 .masJugadosContenido{
   width: 100%;
   background-color: var(--secundario);
   display: flex;
+  border-radius: 0px 10px 10px 0px;
 }
 .titulo{
   display: flex;
