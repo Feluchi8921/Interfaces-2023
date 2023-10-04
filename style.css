@@ -256,12 +256,15 @@ img.cruz {
   grid-area: section8;
   background: pink;
 }
-.footer {
+/*---------------------------Footer--------------------------------------*/
+footer .desktop{
+  display: none;
+}
+.footer{
   background: var(--primarioSombra2);
   color: var(--blanco);
-  height: 380px;
+  height: 500px;
   display: flex;
-  align-content: space-between;
 }
 
 /*---------------------------------------Media Queria Desktop-------------------------------------------------*/
@@ -771,7 +774,9 @@ img.cruz {
     background-color: var(--estado);
   }
   /*------Footer----------*/
-
+    footer .desktop{
+      display: flex;
+    }
   .footer {
     background: var(--primarioSombra2);
     color: var(--blanco);
