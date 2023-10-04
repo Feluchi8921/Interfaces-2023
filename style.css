@@ -12,6 +12,7 @@
   --primarioSombra2: #262626;
   --primarioSombra3: #2f3538;
   --estado: #9fd402;
+  --estadoHover: #719503;
   --acento: #f5d221;
   --peligro: #f53e21;
   --secundarioLuz1: #74a8ab;
@@ -889,4 +890,18 @@ footer .desktop{
   display: flex;
   justify-content: space-around;
 }
+
+
+
+/*--------------------Efectos-------------------------*/
+.continuar:hover{
+    background-color: var(--estadoHover);
+  }
+.estado:hover{
+  color: var(--estadoHover);
+}
+.btn-nav:hover, .hoverAcento:hover{
+  color: var(--acento);
+}
+
 }
