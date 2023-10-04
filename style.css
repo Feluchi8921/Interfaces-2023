@@ -6,13 +6,14 @@
 /*------------------------------Colores-----------------------------*/
 :root {
   --blanco: #f7f7f7f7;
+  --blancoHover:#d3d3d3;
   --negro: #262626;
   --primario: #4e595e;
   --primarioSombra1: #364045;
   --primarioSombra2: #262626;
   --primarioSombra3: #2f3538;
   --estado: #9fd402;
-  --estadoHover: #719503;
+  --estadoHover: #86b602;
   --acento: #f5d221;
   --peligro: #f53e21;
   --secundarioLuz1: #74a8ab;
@@ -43,6 +44,7 @@ h3 {
 p {
   font-size: 16px;
 }
+
 
 /*------------------------------Nav---------------------------------*/
 .navDesktop {
@@ -150,10 +152,18 @@ button.ingresar,
 button.continuar {
   width: max-content;
   height: max-content;
-  border-radius: 6px;
+  border-radius: 4px;
   align-items: center;
   padding: 6px;
+}
+button.continuar{
   color: var(--blanco);
+}
+
+button.ingresar{
+  color: var(--negro);
+  font-size: 16px;
+  
 }
 button.continuar {
   background-color: var(--acento);
@@ -412,9 +422,7 @@ footer .desktop{
   button img {
     margin-left: 6px;
   }
-  span.continuarCon {
-    padding-left: 6px;
-  }
+
   ::placeholder {
     padding-left: 6px;
   }
@@ -434,14 +442,20 @@ footer .desktop{
   button.continuar {
     width: 300px;
     height: 40px;
-    border-radius: 6px;
+    border-radius: 4px;
     align-items: center;
   }
-
+  button .alinearHorizontal{
+    display: flex;
+    align-items: center;
+  }
+  span.continuarCon{
+    margin-left: 10px;
+  }
   button.continuar {
     background-color: var(--estado);
     color: var(--blanco);
-    font-weight: bold;
+    font-size: 18px;
   }
 
   button.ingresar {
@@ -458,10 +472,8 @@ footer .desktop{
     display: flex;
     flex-direction: column;
     width: 100%;
-    justify-content: center;
     align-items: center;
   }
-
   input.input {
     width: 300px;
     height: 40px;
@@ -902,6 +914,10 @@ footer .desktop{
 }
 .btn-nav:hover, .hoverAcento:hover{
   color: var(--acento);
+}
+
+.ingresar:hover{
+  background-color: var(--blancoHover);
 }
 
 }
