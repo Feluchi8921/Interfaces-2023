@@ -9,25 +9,152 @@
   <body>
     <header>
       <nav>
-        <div class="justifyFlexStart alignCenter marginNavLeft">
-          <img src="img/logoHamburguesa.svg" class="logoHamburguesa" alt="logoHamburguesa" />
-          <img src="img/logoPagina.svg" class="logoNav" alt="logoPagina" />
-          <button class="btn-nav"><a>Categorías</a><img src="img/fechaAbajo.svg" class="fechaAbajo"></button>
-          <button class="btn-nav"><a>Comunidad</a><img src="img/fechaAbajo.svg" class="fechaAbajo"></button>
-          <button class="btn-nav"><a>Soporte</a><img src="img/fechaAbajo.svg" class="fechaAbajo"></button>
-          <div class="barraBusqueda">
-            <input class="busquedaNav" /><img src="img/lupaNav.svg"class="lupaNav" />
+        <div class="navDesktop">
+          <div class="justifyFlexStart alignCenter marginNavLeft">
+            <!---Desplegable categorias ok-->
+            <div class="btn-menu btn-nav dropdown">
+              <img
+                src="img/logoHamburguesa.svg"
+                class="logoHamburguesa"
+                alt="logoHamburguesa"
+              />
+
+              <div class="desplegable desplegableHamburguesa">
+                <div class="item">
+                  <img class="item" src="img/misJuegos.svg" alt="logo" />
+                  <button class="btn-nav">
+                    <a>Mis juegos</a
+                    ><img src="img/fechaAbajo.svg" class="fechaAbajo rotar" />
+                  </button>
+                </div>
+                <div class="item">
+                  <img class="item" src="img/accion.svg" alt="logo" />
+                  <button class="btn-nav">
+                    <a>Acción</a
+                    ><img src="img/fechaAbajo.svg" class="fechaAbajo rotar" />
+                  </button>
+                </div>
+                <div class="item">
+                  <img class="item" src="img/aventura.svg" alt="logo" />
+                  <button class="btn-nav">
+                    <a>Aventura</a
+                    ><img src="img/fechaAbajo.svg" class="fechaAbajo rotar" />
+                  </button>
+                </div>
+                <div class="item">
+                  <img class="item" src="img/carreras.svg" alt="logo" />
+                  <button class="btn-nav">
+                    <a>Carreras</a
+                    ><img src="img/fechaAbajo.svg" class="fechaAbajo rotar" />
+                  </button>
+                </div>
+                <div class="item">
+                  <img class="item" src="img/multijugador.svg" alt="logo" />
+                  <button class="btn-nav">
+                    <a>Multijugador</a
+                    ><img src="img/fechaAbajo.svg" class="fechaAbajo rotar" />
+                  </button>
+                </div>
+                <div class="item">
+                  <img class="item" src="img/deporte.svg" alt="logo" />
+                  <button class="btn-nav">
+                    <a>Deporte</a
+                    ><img src="img/fechaAbajo.svg" class="fechaAbajo rotar" />
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!---->
+
+            <img src="img/logoPagina.svg" class="logoNav" alt="logoPagina" />
+            <button class="btn-nav">
+              <a>Categorías</a
+              ><img src="img/fechaAbajo.svg" class="fechaAbajo" />
+            </button>
+            <button class="btn-nav">
+              <a>Comunidad</a
+              ><img src="img/fechaAbajo.svg" class="fechaAbajo" />
+            </button>
+            <button class="btn-nav">
+              <a>Soporte</a><img src="img/fechaAbajo.svg" class="fechaAbajo" />
+            </button>
+
+            <div class="barraBusqueda">
+              <input class="busquedaNav" /><img
+                src="img/lupaNav.svg"
+                class="lupaNav"
+              />
+            </div>
           </div>
-        </div>
-        <div class="justifyFlexEnd alignCenter marginNavRight">
-          <div class="justifyCenter alignCenter">
-            <img src="img/siri98.svg" class="avatar"><button class="btn-nav"><a>Siri98</a><img src="img/fechaAbajo.svg" class="fechaAbajo"></a></button> 
-          </div> 
-          <button class="btn-nav"><img src="img/logoCarritoMas1.svg" class="logoCarritoMas1"></button>
+          <div class="justifyFlexEnd alignCenter marginNavRight">
+            <div class="justifyCenter alignCenter">
+              <!---Desplegable Siri-->
+              <div class="btn-menu btn-nav dropdown">
+                <div class="siri">
+                  <img src="img/siri98.svg" class="avatar" /><button
+                    class="btn-nav"
+                  >
+                    <a>Siri98</a
+                    ><img src="img/fechaAbajo.svg" class="fechaAbajo" />
+                  </button>
+                </div>
+
+                <div class="desplegable desplegableUsuario">
+                  <buttton class="btn-nav">Ver mi perfil</buttton>
+                  <img
+                    class="separadorDesplegable"
+                    src="img/separador.svg"
+                    alt="separador"
+                  />
+                  <buttton class="btn-nav">Cupones</buttton>
+                  <buttton class="btn-nav">Mis juegos</buttton>
+                  <img
+                    src="img/separador.svg"
+                    class="separadorDesplegable"
+                    alt="separador"
+                  />
+                  <buttton class="btn-nav">Configurar cuenta</buttton>
+                  <buttton class="btn-nav">Editar perfil</buttton>
+                  <img
+                    src="img/separador.svg"
+                    class="separadorDesplegable"
+                    alt="separador"
+                  />
+                  <buttton class="btn-nav">Cerrar sesión</buttton>
+                </div>
+              </div>
+              <!---->
+            </div>
+            <!---Desplegable Carrito-->
+            <div class="btn-menu btn-nav dropdown">
+              <button class="btn-nav">
+                <img src="img/logoCarritoMas1.svg" class="logoCarritoMas1" />
+              </button>
+              <div class="desplegable desplegableCarrito">
+                <span class="btn-nav">Resumen de compra</span>
+                <img
+                  class="separadorDesplegable"
+                  src="img/separador.svg"
+                  class="separador"
+                  alt="separador"
+                />
+                <span class="btn-nav">Juegos (1)</span>
+                <div class="productoPrecio">
+                  <span class="btn-nav">Slash Royal</span
+                  ><span class="btn-nav">$2090</span>
+                </div>
+                <img class="producto btn-nav" src="img/slashRoyal.jpg" />
+                <span class="btn-nav">Total $2090</span>
+                <button class="continuarDesplegable">Pagar</button>
+              </div>
+            </div>
+          </div>
+
+          <!----->
         </div>
       </nav>
     </header>
-    
+
     <div class="containerJuegos">
       <div class="breadcrumb"></div>
       <h2>4 en Línea: Mario vs Luigi</h2>
@@ -36,12 +163,24 @@
           <div class="juego">
             <img src="img/juego.jpg" alt="4 en linea" />
             <div class="botoneraRedes">
-              <button class="redesJuego"><a href="#"><img src="img/email.svg" /></a></button>
-              <button class="redesJuego"><a href="#"><img src="img/whatsapp.svg" /></a></button>
-              <button class="redesJuego"><a href="#"><img src="img/twitter.svg" /></a></button> 
-              <button class="redesJuego"><a href="#"><img src="img/instagram.svg" /></a></button>
-              <button class="redesJuego"><a href="#"><img src="img/twitch.svg" /></a></button>
-              <button class="redesJuego"><a href="#"><img src="img/facebook.svg" /></a></button>
+              <button class="redesJuego">
+                <a href="#"><img src="img/email.svg" /></a>
+              </button>
+              <button class="redesJuego">
+                <a href="#"><img src="img/whatsapp.svg" /></a>
+              </button>
+              <button class="redesJuego">
+                <a href="#"><img src="img/twitter.svg" /></a>
+              </button>
+              <button class="redesJuego">
+                <a href="#"><img src="img/instagram.svg" /></a>
+              </button>
+              <button class="redesJuego">
+                <a href="#"><img src="img/twitch.svg" /></a>
+              </button>
+              <button class="redesJuego">
+                <a href="#"><img src="img/facebook.svg" /></a>
+              </button>
             </div>
           </div>
           <div class="instrucciones">
@@ -110,54 +249,60 @@
     </div>
     <footer class="footer footerHover">
       <div class="footerContainerMaster">
-        <div class="footerContainer moneda">
-          <span>Canjear Código</span>
+        <div class="footerContainer footerLegales primario">
+          <img class="logoPagina" src="img/logoPagina.svg" alt="logo" />
+          <span>Level Up</span>
+          <span>Legales</span>
+          <span>Politica de privacidad</span>
+          <span>Imprimir</span>
+          <span>Agradecimientos</span>
+        </div>
+        <div class="footerContainer footerMoneda primario">
+          <span class="blanco">Canjear Código</span>
           <span>Monedas:</span>
           <span class="acento2">Patacone$</span>
           <span>Dolar Solidario</span>
           <span>Dolar Blue</span>
           <span>Dolar Tarjeta</span>
         </div>
-        <div class="footerContainer idioma">
-          <span>Lenguaje:</span>
+        <div class="footerContainer footerLenguaje primario">
+          <span class="blanco">Lenguaje</span>
           <span class="acento2">Español</span>
           <span>Alemán</span>
           <span>Francés</span>
           <span>Polaco</span>
           <span>Inglés</span>
         </div>
-        <div class="footerContainer informacion">
-          <span>Informacion</span>
+        <div class="footerContainer footerInformacion primario">
+          <span class="blanco">Informacion</span>
           <span>Blog</span>
-          <span>Dejanos Tu consulta</span>
+          <span>Dejanos tu consulta</span>
           <span>Recursos</span>
         </div>
-        <div class="footerContainer contactanos">
+        <div class="footerContainer footerContactanos">
           <span>Contactanos</span>
           <div class="redesFooter">
-          <span
-            ><a href="#"><img class="redes" src="img/whatsapp.svg" /></a
-          ></span>
-          <span
-            ><a href="#"><img class="redes" src="img/twitter.svg" /></a
-          ></span>
-          <span
-            ><a href="#"><img class="redes" src="img/instagram.svg" /></a
-          ></span>
-          <span
-            ><a href="#"><img class="redes" src="img/twitch.svg" /></a
-          ></span>
-          <span>
-            <a href="#"><img class="redes" src="img/facebook.svg" /></a
-          ></span>
+            <span
+              ><a href="#"><img class="redes" src="img/whatsapp.svg" /></a
+            ></span>
+            <span
+              ><a href="#"><img class="redes" src="img/twitter.svg" /></a
+            ></span>
+            <span
+              ><a href="#"><img class="redes" src="img/instagram.svg" /></a
+            ></span>
+            <span
+              ><a href="#"><img class="redes" src="img/twitch.svg" /></a
+            ></span>
+            <span>
+              <a href="#"><img class="redes" src="img/facebook.svg" /></a
+            ></span>
           </div>
         </div>
       </div>
-      <div class="footerlegales">
-        <span>Legales</span>
-        <span>Politica de privacidad</span>
-        <span>Imprimir</span>
-        <span>Agradecimientos</span>
+      <div class="footerContainerBottom primario">
+        <span>Av. Caseros 3039, Piso 2, CP 1264, Parque Patricios, CABA</span>
+        <span>Copyright © 1999-2023 Level Up S.R.L</span>
       </div>
     </footer>
   </body>

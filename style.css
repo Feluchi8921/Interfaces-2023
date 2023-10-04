@@ -15,7 +15,7 @@
   --acento: #f5d221;
   --peligro: #f53e21;
   --secundarioLuz1: #74a8ab;
-  --acento2: #BC3DC2;
+  --acento2: #bc3dc2;
 }
 body {
   background-color: var(--primarioSombra1);
@@ -43,45 +43,38 @@ p {
 }
 
 /*------------------------------Nav---------------------------------*/
-.navDesktop{
+.navDesktop {
   display: none;
 }
-.navMobil{
+.navMobil {
   display: flex;
+  align-items: center;
   justify-content: space-between;
 }
 
-nav {
+nav,
+.navMobil {
   width: 100%;
   height: 50px;
-  background:var(--negro);
+  background: var(--negro);
   opacity: 90%;
 }
-.btn-nav{
+.btn-nav {
   align-items: center;
   justify-content: flex-start;
   display: flex;
   padding: 2px;
 }
-.usuario{
+.usuario {
   align-items: center;
   display: flex;
-  justify-content:flex-end;
-  padding: 6px;
-}
-nav img.logoHamburguesa{
-  width: 25px;
-  height: 25px;
-}
-nav img.logoNav{
-  width: 40px;
-  height: 40px;
-  align-items: center;
+  justify-content: flex-end;
+  margin-right: 10px;
 }
 
-
-
-a, ul, li {
+a,
+ul,
+li {
   text-decoration: none;
   list-style: none;
 }
@@ -101,16 +94,16 @@ a, ul, li {
 }
 /*---Desplegable---*/
 
-
 .desplegable.show {
   display: flex;
 }
 
-.desplegable.cerrar{ /*cierro el desplegable*/
+.desplegable.cerrar {
+  /*cierro el desplegable*/
   display: none;
 }
 
-.desplegable{
+.desplegable {
   width: min-content;
   height: min-content;
   background-color: var(--primarioSombra2);
@@ -119,39 +112,40 @@ a, ul, li {
   min-width: 0px;
   padding: 10px;
 }
-.desplegableUsuario{
+.desplegableUsuario {
   position: absolute;
   left: -30px;
 }
-.desplegableCarrito{
+.desplegableCarrito {
   position: absolute;
   left: -160px;
   width: max-content;
 }
 
-.desplegableCarrito img.producto{
+.desplegableCarrito img.producto {
   width: 80px;
   height: auto;
   border-radius: 4px;
 }
 
-.desplegableCarrito img.separador{
+.desplegableCarrito img.separador {
   width: 200px;
 }
-.alignCenter{
+.alignCenter {
   display: flex;
   align-items: center;
 }
-.justifyCenter{
+.justifyCenter {
   display: flex;
   justify-content: center;
 }
 
-.productoPrecio{
+.productoPrecio {
   display: flex;
   justify-content: center;
 }
-button.ingresar, button.continuar{
+button.ingresar,
+button.continuar {
   width: max-content;
   height: max-content;
   border-radius: 6px;
@@ -159,27 +153,27 @@ button.ingresar, button.continuar{
   padding: 6px;
   color: var(--blanco);
 }
-button.continuar{
+button.continuar {
   background-color: var(--acento);
 }
 
-
-button.ingresar{
+button.ingresar {
   background-color: var(--blanco);
 }
-.siri{
+.siri {
   display: flex;
   justify-content: center;
   align-items: flex-start;
 }
-.btn-menu{
+.btn-menu {
   display: none;
+  margin-left: 10px;
 }
 .dropdown {
   position: relative;
   display: inline-block;
 }
-img.cruz{
+img.cruz {
   width: 15px;
   height: 15px;
   margin-left: 80px;
@@ -189,23 +183,24 @@ img.cruz{
   display: block;
 }
 
-.rotar{
+.rotar {
   transform: rotate(-90deg);
 }
-.logoHamburguesa {
-  height: 20px;
+
+.navMobil img.logoHamburguesa,
+.navMobil img.avatar,
+.navMobil img.logoCarritoMas1 {
   width: 20px;
+  height: 20px;
   align-items: center;
-  justify-content: center;
-  margin-top: 3px;
 }
-.logoNav {
-  height: 30px;
+.navMobil img.logoPagina {
+  margin-left: 20px;
+  align-items: center;
   width: 30px;
-  align-items: center;
-  justify-content: center;
-  margin-top: 3px;
+  height: 30px;
 }
+
 /*---------------------------Container Mobil-----------------------------*/
 .container {
   display: grid;
@@ -374,7 +369,6 @@ img.cruz{
     font-weight: bold;
   }
 
-
   a {
     text-decoration: none;
   }
@@ -431,7 +425,8 @@ img.cruz{
     margin-top: 50px;
     margin-bottom: 50px;
   }
-  button.ingresar, button.continuar{
+  button.ingresar,
+  button.continuar {
     width: 300px;
     height: 40px;
     border-radius: 6px;
@@ -606,18 +601,17 @@ img.cruz{
     background-color: transparent;
   }
 
-
-  .siderbarJuegoInstrucciones .botoneraRedes{
+  .siderbarJuegoInstrucciones .botoneraRedes {
     display: flex;
     justify-content: flex-end;
     align-items: center;
     margin: 2px;
   }
-  button.redesJuego{
+  button.redesJuego {
     background-color: transparent;
-    border:transparent;
+    border: transparent;
   }
-  .redesJuego img{
+  .redesJuego img {
     width: 20px;
     height: 20px;
     border-radius: 0%;
@@ -636,10 +630,10 @@ img.cruz{
   }
 
   /*-----------------nav----------------*/
-  .navMobil{
+  .navMobil {
     display: none;
   }
-  .navDesktop{
+  .navDesktop {
     display: flex;
     justify-content: space-between;
   }
@@ -683,6 +677,7 @@ img.cruz{
     height: 25px;
     width: 25px;
     align-items: center;
+    margin-right: 30px;
   }
   .logoNav {
     height: 40px;
@@ -725,12 +720,17 @@ img.cruz{
     height: 25px;
     align-items: center;
   }
+  .siri img.avatar {
+    width: 30px;
+    height: 30px;
+    margin-top: 6px;
+  }
 
   /*---Desplegable---*/
   .desplegable.show {
     display: flex;
   }
-  .desplegable{
+  .desplegable {
     width: min-content;
     height: min-content;
     background-color: var(--primarioSombra2);
@@ -739,86 +739,97 @@ img.cruz{
     min-width: 0px;
     padding: 10px;
   }
-  .siri{
+  .siri {
     display: flex;
     justify-content: center;
     align-items: flex-start;
   }
- .item{
-  display: flex;
-  justify-content: flex-start;
-  align-items: left;
- }
+  .item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: left;
+  }
 
- .item img.item{
-      width: 30px;
-      height: 30px;
+  .item img.item {
+    width: 30px;
+    height: 30px;
+  }
 
- }
+  img.separadorDesplegable {
+    width: min-content;
+  }
 
-img.separadorDesplegable {
-  width: min-content;
-}
+  button.continuarDesplegable {
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6px;
+    color: var(--blanco);
+    width: min-content;
+    height: min-content;
+    background-color: var(--estado);
+  }
+  /*------Footer----------*/
 
-button.continuarDesplegable{
-  border-radius: 6px;
-  display:flex;
-  justify-content: center;
-  align-items: center;
-  padding: 6px;
-  color: var(--blanco);
-  width: min-content;
-  height: min-content;
-  background-color: var(--estado);
-}
-/*------Footer----------*/
+  .footer {
+    background: var(--primarioSombra2);
+    color: var(--blanco);
+    height: 380px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .footerContainerMaster {
+    display: flex;
+    justify-content: space-between;
+  }
+  .footerContainerMaster div:first-child {
+    margin-left: 10%;
+  }
+  .footerContainerMaster div:last-child {
+    margin-right: 10%;
+  }
+  .footerContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  .footerContainer span {
+    padding: 5px;
+  }
 
-.footer {
-  background: var(--primarioSombra2);
-  color: var(--blanco);
-  height: 380px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-}
-.footerContainerMaster {
-  display: flex;
-  justify-content: space-between;
-}
-.footerContainerMaster div:first-child {
-  margin-left: 10%;
-}
-.footerContainerMaster div:last-child {
-  margin-right: 10%;
-}
-.footerContainer {
-  display: flex;
-  flex-direction: column;
-}
-.footerContainer span {
-  padding: 5px;
-}
+  .redesFooter {
+    display: flex;
+  }
+  .blanco {
+    color: var(--blanco);
+  }
+  .acento2 {
+    color: var(--acento2);
+  }
 
-.footerContainer.contactanos:first-child {
-  display: inline-block;
-}
+  .primario {
+    color: var(--primario);
+  }
 
-.footerlegales span {
-  color: var(--primarioSombra1);
-  font-size: 13px;
-  margin-left: 10%;
-  padding: 10px;
-}
+  footer img.logoPagina {
+    width: 70px;
+    height: 70px;
+  }
 
-.contactanos{
-  display: flex;
-}
-
-.redesFooter{
-  display: block;
-}
-
-.acento2{
-  color: var(--acento2)
-}
+  .footerLegales,
+  .footerMoneda,
+  .footerLenguaje,
+  .footerInformacion,
+  .footerContactanos {
+    display: flex;
+    justify-content: flex-start;
+    align-items: left;
+  }
+  .footerContainerBottom {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-right: 10%;
+  }
 }
