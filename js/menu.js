@@ -3,19 +3,19 @@
 const mostrar= document.querySelector(".btn-menu");
 
 //menu responsive
-mostrar.addEventListener("click", mostrar);
-function mostrar() {
-    document.querySelector(".desplegable").classList.mostrar("show");
+mostrar.addEventListener("click", toggleMenu);
+function toggleMenu() {
+    document.querySelector(".desplegable").classList.toggle("show");
 };
 
 //------------------Efecto ocultar--------------
-const ocultar= document.querySelector(".btn-cruz");
+//const ocultar= document.querySelector(".btn-cruz");
 
 //cruz para cerrar
-ocultar.addEventListener("click", ocultar);
-function ocultar() {
-    document.querySelector(".desplegable").classList.ocultar("cerrar");
-};
+//ocultar.addEventListener("click", toggleMenu);
+//function toggleMenu() {
+//    document.querySelector(".desplegable").classList.toggle("cerrar");
+//};
 
 //------------------Efecto agrandar--------------
 const agrandar=document.querySelector(".agrandar");

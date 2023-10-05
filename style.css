@@ -443,6 +443,13 @@ footer .desktop{
     display: flex;
     align-items: center;
   }
+.alinearVertical{
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  margin-bottom: 30px;
+}
+
   span.continuarCon{
     margin-left: 10px;
   }
@@ -489,8 +496,8 @@ footer .desktop{
   }
 
   .containerJuegos,
-  sidebar.sidebarVideos,
-  sidebar .sidebarJuego {
+  aside.asideVideos,
+  aside .asideJuego {
     display: block;
   }
 
@@ -500,26 +507,23 @@ footer .desktop{
   section .sectionComentarios {
     display: flex;
   }
-  section.sectionJuego,
-  section.seccionRecomendados,
-  section.sectionComentarios {
-  
-  }
+
   section.sectionJuego {
     height: 1300px;
   }
 
-  sidebar.sidebarJuegoInstrucciones {
+  aside.asideJuegoInstrucciones {
     width: 1000px;
     height: 1040 px;
     margin: 0;
   }
 
-  sidebar.sidebarVideos {
-    width: 1280px;
+  aside.asideVideos {
+    width: max-content;
     height: 1300px;
+    margin-left: 5%;
   }
-  sidebar.sidebarVideos {
+  aside.asideVideos {
     margin-top: 20px;
   }
 
@@ -530,38 +534,49 @@ footer .desktop{
 
   section.sectionComentarios {
     width: 100%;
-    height: 1350px;
+    height: 800px;
     background-color: var(--primarioSombra3);
+    margin-bottom: 50px;
+ 
   }
 
-  sidebar.sidebarVideos.video img {
+  aside.asideVideos.video img {
     width: 316px;
     height: 227px;
     margin: 6px;
   }
 
   .video img {
-    width: 316px;
-    height: 227px;
+    width: 300px;
+    height: 250px;
     border-radius: 6px;
+    margin-top: 6px;
+    margin-bottom: 20px;
   }
 
   .juego img {
     width: 800px;
     height: 600x;
-    border-radius: 16px;
+    border-radius: 16px 16px 0px 0px;
     margin-right: 20px;
     margin-top: 20px;
+    margin-bottom: 0%;
   }
   img.separadorVideosSugeridos {
-    width: 316px;
+    width: 300px;
+    margin-bottom: 20px;
   }
 
-  sidebar.siderbarJuegoInstrucciones div.instrucciones {
+  aside.siderbarJuegoInstrucciones div.instrucciones {
     /*revisar no me lo toma*/
     background-color: var(--primarioSombra3);
-    width: 800px;
-    height: 449 px;
+    width: 760px;
+    height: max-content;
+    margin-top: 50px;
+    padding: 20px;
+    font: "Open-Sans";
+    font-size: 18px;
+    color: var(--blanco);
   }
 
   /*------Comentarios-----------*/
@@ -569,8 +584,8 @@ footer .desktop{
     background-color: var(--primarioSombra3);
     width: 80%;
     height: 50px;
-    margin-bottom: 2%;
-    margin-left: 20px;
+    padding: 20px;
+    display: flex;
   }
 
   div.botoneraComentarios img {
@@ -579,23 +594,53 @@ footer .desktop{
     background-color: var(--primario);
   }
 
-  div.botoneraComentarios li,
-  div.botoneraComentarios a {
-    background-color: var(--primario);
-    border: 4px;
-    width: fit-content;
-    height: 50px;
-    text-align: center;
-    align-items: baseline;
-    color: var(--blanco);
-    text-decoration: none;
-    margin-right: 6px;
-  }
-
-  div.botoneraComentarios input {
-    width: 80%;
+   input.botoneraComentarios {
+    width: 90%;
     height: 50px;
     border-radius: 6px;
+    display: flex;
+    justify-content: flex-end;
+    margin-left: 20px;
+  }
+
+  button.btn-coment{
+    background-color: var(--primario);
+    padding: 6px;
+    border-radius: 4px;
+  }
+
+  .usuarioComent{
+    display: flex;
+    justify-content: flex-start;
+    color: var(--blanco);
+    align-items: center;
+  }
+  span.usuarioComent.chico{
+      font-size: 12px;
+  }
+  span.usuarioComent{
+    margin-left: 20px;
+  }
+
+  .usuarioComent.usuarioComentMarg{
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 5px;
+    
+  }
+  button.enviar{
+    background-color: var(--blanco);
+    width: min-content;
+    height: min-content;
+    padding: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font: "Open Sans";
+    font-size: 16px;
+    border-radius: 4px;
+    margin-left: 86.5%;
+    font-weight: bolder;
   }
   /*------Botonera Redes----------*/
   div.botoneraRedes {
@@ -603,7 +648,7 @@ footer .desktop{
     width: 800px;
     height: 50px;
     margin: 0%;
-    border-radius: 6px;
+    border-radius: 0px 0px 6px 6px;
     padding: 0%;
   }
   .div.botoneraRedes img {
@@ -630,12 +675,6 @@ footer .desktop{
     margin: 0%;
   }
 
-  .botoneraComentarios li {
-    align-items: center;
-    margin: 10px;
-    padding: 10x;
-    width: max-content;
-  }
   img.redes {
     width: 20x;
     height: 20px;
@@ -828,7 +867,9 @@ footer .desktop{
   .primario {
     color: var(--primario);
   }
-
+.secundario{
+  color:var(--secundario)
+}
   footer img.logoPagina {
     width: 70px;
     height: 70px;
@@ -903,8 +944,12 @@ footer .desktop{
 
 
 /*--------------------Efectos-------------------------*/
+.continuar:hover, .estado:hover,.btn-nav:hover, .hoverAcento:hover, .ingresar:hover, .enviar:hover{
+  cursor: pointer;
+}
 .continuar:hover{
     background-color: var(--estadoHover);
+
   }
 .estado:hover{
   color: var(--estadoHover);
@@ -913,8 +958,10 @@ footer .desktop{
   color: var(--acento);
 }
 
-.ingresar:hover{
+.ingresar:hover, .enviar:hover{
   background-color: var(--blancoHover);
 }
+
+
 
 }
