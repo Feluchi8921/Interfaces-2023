@@ -13,13 +13,13 @@
     <title>Crea tu Cuenta</title>
   </head>
   <body class="form">
-    <div class="containerFondo">
+    <div class="containerFondo doc">
       <div class="containerForm">
         <img class="logo" src="img/logoPagina.svg" alt="logo" />
         <h2>Crear Cuenta</h2>
         <form>
           <div class="inputForm">
-            <label  for="nombre">Nombre</label>
+            <label for="nombre">Nombre</label>
             <input class="input" type="text" required />
           </div>
           <div class="inputForm">
@@ -50,7 +50,7 @@
         <span>
           <img class="captcha" src="img/captcha.svg" alt="captcha" />
         </span>
-        <button class="btn btn-click continuar" type="button">Continuar</button>
+        <button id="boton" class="btn btn-click continuar" type="button">Continuar</button>
         <div>
           <span
             >Ya tenes cuenta?<span class="estado"> Inicia Sesión</span></span
@@ -86,5 +86,11 @@
         </div>
       </div>
     </div>
+    <div class="popup ocultar">
+      <h3>Te has registrado correctamente!!!</h3>
+      <img class="load" src="img/load.svg" alt="ok" />
+      
+    </div>
+    <script type="text/javascript" src="js/menu.js"></script>
   </body>
 </html>

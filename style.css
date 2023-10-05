@@ -92,7 +92,7 @@ nav,
 }
 /*---Desplegable---*/
 
-.desplegable.show {
+.mostrar {
   display: flex;
 }
 
@@ -962,6 +962,35 @@ footer .desktop{
   background-color: var(--blancoHover);
 }
 
+.subir{
+  color: var(--estado);
+  text-decoration: none;
+  display: block;
+  float:right;
+}
 
+/*---------Registro Ok-------*/
+.popup{
+  display: none;
+  
+}
 
+.visible{
+  display: flex;
+  width: max-content;
+  height: max-content;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+ margin-top: 100px;
+ padding: 50px;
+}
+.ocultar{
+  display: none;
+}
+img.load{
+  margin-top: 30px;
+  width: 60px;
+  height: 60px;
+}
 }
