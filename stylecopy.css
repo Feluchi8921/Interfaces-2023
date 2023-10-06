@@ -988,6 +988,13 @@ carousel */
   color: #f7f7f7;
   margin: 20px;
 }
+.jugar {
+  position: absolute;
+  border-radius: 18px;
+  width: 90px;
+  height: 40px;
+  background: var(--estado);
+}
 .carousel div img {
   height: 115px;
   width: 230px;
