@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="stylecopy.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <title>Level Up</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <!---Barra Nav Mobil-->
+        <div class="navMobil">
+          <div class="btn-menu btn-nav dropdown">
+            <img
+              src="img/logoHamburguesa.svg"
+              class="logoHamburguesa"
+              alt="logoHamburguesa"
+            />
+            <!---Desplegable categorias-->
+            <div class="desplegable">
+              <button class="btn-nav btn-cruz">
+                <img class="cruz" src="img/cruz.svg" alt="cerrar" />
+              </button>
+
+              <button class="btn-nav">
+                <a>Mis juegos</a
+                ><img src="img/fechaAbajo.svg" class="fechaAbajo" />
+              </button>
+              <button class="btn-nav">
+                <a>Acción</a
+                ><img src="img/fechaAbajo.svg" class="fechaAbajo rotar" />
+              </button>
+              <button class="btn-nav">
+                <a>Aventura</a
+                ><img src="img/fechaAbajo.svg" class="fechaAbajo rotar" />
+              </button>
+              <button class="btn-nav">
+                <a>Carreras</a
+                ><img src="img/fechaAbajo.svg" class="fechaAbajo rotar" />
+              </button>
+              <button class="btn-nav">
+                <a>Multijugador</a
+                ><img src="img/fechaAbajo.svg" class="fechaAbajo rotar" />
+              </button>
+              <button class="btn-nav">
+                <a>Deporte</a
+                ><img src="img/fechaAbajo.svg" class="fechaAbajo rotar" />
+              </button>
+            </div>
+            <img src="img/logoPagina.svg" class="logoPagina" alt="logoPagina" />
+          </div>
+          <!---->
+
+          <div class="usuario">
+            <div class="btn-menu btn-nav dropdown">
+              <div class="siri">
+                <img src="img/siri98.svg" class="avatar" /><button
+                  class="btn-nav"
+                >
+                  <a>Siri98</a
+                  ><img src="img/fechaAbajo.svg" class="fechaAbajo" />
+                </button>
+              </div>
+              <!---Desplegable Siri-->
+              <div class="desplegable desplegableUsuario">
+                <buttton class="btn-nav">Ver mi perfil</buttton>
+                <img
+                  src="img/separador.svg"
+                  class="separador"
+                  alt="separador"
+                />
+                <buttton class="btn-nav">Cupones</buttton>
+                <buttton class="btn-nav">Mis juegos</buttton>
+                <img
+                  src="img/separador.svg"
+                  class="separador"
+                  alt="separador"
+                />
+                <buttton class="btn-nav">Configurar cuenta</buttton>
+                <buttton class="btn-nav">Editar perfil</buttton>
+                <img
+                  src="img/separador.svg"
+                  class="separador"
+                  alt="separador"
+                />
+                <buttton class="btn-nav">Cerrar sesión</buttton>
+              </div>
+            </div>
+            <!---->
+
+            <!---Desplegable Carrito-->
+            <div class="btn-menu btn-nav dropdown">
+              <button class="btn-nav">
+                <img src="img/logoCarritoMas1.svg" class="logoCarritoMas1" />
+              </button>
+              <div class="desplegable desplegableCarrito">
+                <h3>Resumen de compra</h3>
+                <img
+                  class="separador"
+                  src="img/separador.svg"
+                  class="separador"
+                  alt="separador"
+                />
+                <p>Juegos (1)</p>
+                <div class="productoPrecio">
+                  <span>Slash Royal</span><span>$2090</span>
+                </div>
+                <img class="producto" src="img/slashRoyal.jpg" />
+                <h3>Total $2090</h3>
+                <button class="continuar"><h3>Pagar</h3></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!---->
+
+        <!----Barra Nav Desktop-->
+        <div class="navDesktop">
+          <div class="justifyFlexStart alignCenter marginNavLeft">
+            <!---Desplegable categorias ok-->
+            <div class="btn-menu btn-nav dropdown">
+              <img
+                src="img/logoHamburguesa.svg"
+                class="logoHamburguesa"
+                alt="logoHamburguesa"
+              />
+
+              <div class="desplegable desplegableHamburguesa">
+                <div class="item">
+                  <img class="item" src="img/misJuegos.svg" alt="logo" />
+                  <button class="btn-nav">
+                    <a>Mis juegos</a
+                    ><img src="img/fechaAbajo.svg" class="fechaAbajo rotar" />
+                  </button>
+                </div>
+                <div class="item">
+                  <img class="item" src="img/accion.svg" alt="logo" />
+                  <button class="btn-nav">
+                    <a>Acción</a
+                    ><img src="img/fechaAbajo.svg" class="fechaAbajo rotar" />
+                  </button>
+                </div>
+                <div class="item">
+                  <img class="item" src="img/aventura.svg" alt="logo" />
+                  <button class="btn-nav">
+                    <a>Aventura</a
+                    ><img src="img/fechaAbajo.svg" class="fechaAbajo rotar" />
+                  </button>
+                </div>
+                <div class="item">
+                  <img class="item" src="img/carreras.svg" alt="logo" />
+                  <button class="btn-nav">
+                    <a>Carreras</a
+                    ><img src="img/fechaAbajo.svg" class="fechaAbajo rotar" />
+                  </button>
+                </div>
+                <div class="item">
+                  <img class="item" src="img/multijugador.svg" alt="logo" />
+                  <button class="btn-nav">
+                    <a>Multijugador</a
+                    ><img src="img/fechaAbajo.svg" class="fechaAbajo rotar" />
+                  </button>
+                </div>
+                <div class="item">
+                  <img class="item" src="img/deporte.svg" alt="logo" />
+                  <button class="btn-nav">
+                    <a>Deporte</a
+                    ><img src="img/fechaAbajo.svg" class="fechaAbajo rotar" />
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!---->
+
+            <img src="img/logoPagina.svg" class="logoNav" alt="logoPagina" />
+            <button class="btn-nav">
+              <a>Categorías</a
+              ><img src="img/fechaAbajo.svg" class="fechaAbajo" />
+            </button>
+            <button class="btn-nav">
+              <a>Comunidad</a
+              ><img src="img/fechaAbajo.svg" class="fechaAbajo" />
+            </button>
+            <button class="btn-nav">
+              <a>Soporte</a><img src="img/fechaAbajo.svg" class="fechaAbajo" />
+            </button>
+
+            <div class="barraBusqueda">
+              <input class="busquedaNav" /><img
+                src="img/lupaNav.svg"
+                class="lupaNav"
+              />
+            </div>
+          </div>
+          <div class="justifyFlexEnd alignCenter marginNavRight">
+            <div class="justifyCenter alignCenter">
+              <!---Desplegable Siri-->
+              <div class="btn-menu btn-nav dropdown">
+                <div class="siri">
+                  <img src="img/siri98.svg" class="avatar" /><button
+                    class="btn-nav"
+                  >
+                    <a>Siri98</a
+                    ><img src="img/fechaAbajo.svg" class="fechaAbajo" />
+                  </button>
+                </div>
+
+                <div class="desplegable desplegableUsuario">
+                  <buttton class="btn-nav">Ver mi perfil</buttton>
+                  <img
+                    class="separadorDesplegable"
+                    src="img/separador.svg"
+                    alt="separador"
+                  />
+                  <buttton class="btn-nav">Cupones</buttton>
+                  <buttton class="btn-nav">Mis juegos</buttton>
+                  <img
+                    src="img/separador.svg"
+                    class="separadorDesplegable"
+                    alt="separador"
+                  />
+                  <buttton class="btn-nav">Configurar cuenta</buttton>
+                  <buttton class="btn-nav">Editar perfil</buttton>
+                  <img
+                    src="img/separador.svg"
+                    class="separadorDesplegable"
+                    alt="separador"
+                  />
+                  <buttton class="btn-nav">Cerrar sesión</buttton>
+                </div>
+              </div>
+              <!---->
+            </div>
+            <!---Desplegable Carrito-->
+            <div class="btn-menu btn-nav dropdown">
+              <button class="btn-nav">
+                <img src="img/logoCarritoMas1.svg" class="logoCarritoMas1" />
+              </button>
+              <div class="desplegable desplegableCarrito">
+                <span class="btn-nav">Resumen de compra</span>
+                <img
+                  class="separadorDesplegable"
+                  src="img/separador.svg"
+                  class="separador"
+                  alt="separador"
+                />
+                <span class="btn-nav">Juegos (1)</span>
+                <div class="productoPrecio">
+                  <span class="btn-nav">Slash Royal</span
+                  ><span class="btn-nav">$2090</span>
+                </div>
+                <img class="producto btn-nav" src="img/slashRoyal.jpg" />
+                <span class="btn-nav">Total $2090</span>
+                <button class="continuarDesplegable">Pagar</button>
+              </div>
+            </div>
+          </div>
+
+          <!----->
+        </div>
+      </nav>
+    </header>
+
+    <div>
+      <div class="containerGrande">
+        <ul class="slider">
+          <img id="slide1" src="img/marioPortada.jpg" />
+          <img id="slide2" src="img/1v1Battle.jpg" />
+          <img id="slide3" src="img/stickman.jpg" />
+          <img id="slide4" src="img/zombsRoyale.png" />
+        </ul>
+        <div class="sliderNav">
+          <ul class="menu">
+            <li><a href="#slide1">o</a></li>
+            <li><a href="#slide2">o</a></li>
+            <li><a href="#slide3">o</a></li>
+            <li><a href="#slide4">o</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- carousel -->
+    <div id="carousel1" class="containerMax">
+      <div class="containerCarrusel">
+        <i id="left" class="fa-solid fa-angle-left arrowIcon"></i>
+        <div class="carousel">
+          <div>
+            <img src="img/1v1Battle.jpg" alt="img" />
+            <p>1v1 Battle</p>
+          </div>
+          <div>
+            <img src="img/8ballBillliards.jpg" alt="img" />
+            <p>Titulo</p>
+          </div>
+          <div>
+            <img src="img/astroDud.jpg" alt="img" />
+            <p>Titulo</p>
+          </div>
+          <div>
+            <img src="img/badEggs.jpg" alt="img" />
+            <p>Titulo</p>
+          </div>
+          <div>
+            <img src="img/basketRandom.jpg" alt="img" />
+            <p>Titulo</p>
+          </div>
+          <div>
+            <img src="img/bloxd.jpg" alt="img" />
+            <p>Titulo</p>
+          </div>
+          <div>
+            <img src="img/crazyDrift.jpg" alt="img" />
+            <p>Titulo</p>
+          </div>
+          <div>
+            <img src="img/deadShot.jpg" alt="img" />
+            <p>Titulo</p>
+          </div>
+          <div>
+            <img src="img/gridPunk.jpg" alt="img" />
+            <p>Titulo</p>
+          </div>
+          <div>
+            <img src="img/slashRoyal.jpg" alt="img" />
+            <p>Titulo</p>
+          </div>
+          <div>
+            <img src="img/smashKarts.jpg" alt="img" />
+            <p>Titulo</p>
+          </div>
+        </div>
+        <i id="right" class="fa-solid fa-angle-right arrowIcon"></i>
+      </div>
+    </div>
+
+    <div id="carousel2" class="containerMax">
+      <div class="containerCarrusel">
+        <i id="left" class="fa-solid fa-angle-left arrowIcon"></i>
+        <div class="carousel">
+          <div>
+            <img src="img/1v1Battle.jpg" alt="img" />
+            <p>1v1 Battle</p>
+          </div>
+          <div>
+            <img src="img/8ballBillliards.jpg" alt="img" />
+            <p>Titulo</p>
+          </div>
+          <div>
+            <img src="img/astroDud.jpg" alt="img" />
+            <p>Titulo</p>
+          </div>
+          <div>
+            <img src="img/badEggs.jpg" alt="img" />
+            <p>Titulo</p>
+          </div>
+          <div>
+            <img src="img/basketRandom.jpg" alt="img" />
+            <p>Titulo</p>
+          </div>
+          <div>
+            <img src="img/bloxd.jpg" alt="img" />
+            <p>Titulo</p>
+          </div>
+          <div>
+            <img src="img/crazyDrift.jpg" alt="img" />
+            <p>Titulo</p>
+          </div>
+          <div>
+            <img src="img/deadShot.jpg" alt="img" />
+            <p>Titulo</p>
+          </div>
+          <div>
+            <img src="img/gridPunk.jpg" alt="img" />
+            <p>Titulo</p>
+          </div>
+          <div>
+            <img src="img/slashRoyal.jpg" alt="img" />
+            <p>Titulo</p>
+          </div>
+          <div>
+            <img src="img/smashKarts.jpg" alt="img" />
+            <p>Titulo</p>
+          </div>
+        </div>
+        <i id="right" class="fa-solid fa-angle-right arrowIcon"></i>
+      </div>
+    </div>
+    <div id="carousel3" class="containerMax">
+      <div class="containerCarrusel">
+        <i id="left" class="fa-solid fa-angle-left arrowIcon"></i>
+        <div class="carousel">
+          <div>
+            <img src="img/1v1Battle.jpg" alt="img" />
+            <p>1v1 Battle</p>
+          </div>
+          <div>
+            <img src="img/8ballBillliards.jpg" alt="img" />
+            <p>Titulo</p>
+          </div>
+          <div>
+            <img src="img/astroDud.jpg" alt="img" />
+            <p>Titulo</p>
+          </div>
+          <div>
+            <img src="img/badEggs.jpg" alt="img" />
+            <p>Titulo</p>
+          </div>
+          <div>
+            <img src="img/basketRandom.jpg" alt="img" />
+            <p>Titulo</p>
+          </div>
+          <div>
+            <img src="img/bloxd.jpg" alt="img" />
+            <p>Titulo</p>
+          </div>
+          <div>
+            <img src="img/crazyDrift.jpg" alt="img" />
+            <p>Titulo</p>
+          </div>
+          <div>
+            <img src="img/deadShot.jpg" alt="img" />
+            <p>Titulo</p>
+          </div>
+          <div>
+            <img src="img/gridPunk.jpg" alt="img" />
+            <p>Titulo</p>
+          </div>
+          <div>
+            <img src="img/slashRoyal.jpg" alt="img" />
+            <p>Titulo</p>
+          </div>
+          <div>
+            <img src="img/smashKarts.jpg" alt="img" />
+            <p>Titulo</p>
+          </div>
+        </div>
+        <i id="right" class="fa-solid fa-angle-right arrowIcon"></i>
+      </div>
+    </div>
+    <div id="carousel4" class="containerMax">
+      <div class="containerCarrusel">
+        <i id="left" class="fa-solid fa-angle-left arrowIcon"></i>
+        <div class="carousel">
+          <div>
+            <img src="img/1v1Battle.jpg" alt="img" />
+            <p>1v1 Battle</p>
+          </div>
+          <div>
+            <img src="img/8ballBillliards.jpg" alt="img" />
+            <p>Titulo</p>
+          </div>
+          <div>
+            <img src="img/astroDud.jpg" alt="img" />
+            <p>Titulo</p>
+          </div>
+          <div>
+            <img src="img/badEggs.jpg" alt="img" />
+            <p>Titulo</p>
+          </div>
+          <div>
+            <img src="img/basketRandom.jpg" alt="img" />
+            <p>Titulo</p>
+          </div>
+          <div>
+            <img src="img/bloxd.jpg" alt="img" />
+            <p>Titulo</p>
+          </div>
+          <div>
+            <img src="img/crazyDrift.jpg" alt="img" />
+            <p>Titulo</p>
+          </div>
+          <div>
+            <img src="img/deadShot.jpg" alt="img" />
+            <p>Titulo</p>
+          </div>
+          <div>
+            <img src="img/gridPunk.jpg" alt="img" />
+            <p>Titulo</p>
+          </div>
+          <div>
+            <img src="img/slashRoyal.jpg" alt="img" />
+            <p>Titulo</p>
+          </div>
+          <div>
+            <img src="img/smashKarts.jpg" alt="img" />
+            <p>Titulo</p>
+          </div>
+        </div>
+        <i id="right" class="fa-solid fa-angle-right arrowIcon"></i>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="footerContainerMaster">
+        <div class="footerContainer footerLegales primario">
+          <img class="logoPagina" src="img/logoPagina.svg" alt="logo" />
+          <span class="hoverAcento">Level Up</span>
+          <span class="hoverAcento">Legales</span>
+          <span class="hoverAcento">Politica de privacidad</span>
+          <span class="hoverAcento">Imprimir</span>
+          <span class="hoverAcento">Agradecimientos</span>
+        </div>
+        <div class="footerContainer footerMoneda primario desktop">
+          <span class="blanco hoverAcento">Canjear Código</span>
+          <span class="hoverAcento">Monedas:</span>
+          <span class="acento2 hoverAcento">Patacone$</span>
+          <span class="hoverAcento">Dolar Solidario</span>
+          <span class="hoverAcento">Dolar Blue</span>
+          <span class="hoverAcento">Dolar Tarjeta</span>
+        </div>
+        <div class="footerContainer footerLenguaje primario desktop">
+          <span class="blanco hoverAcento">Lenguaje</span>
+          <span class="acento2 hoverAcento">Español</span>
+          <span class="hoverAcento">Alemán</span>
+          <span class="hoverAcento">Francés</span>
+          <span class="hoverAcento">Polaco</span>
+          <span class="hoverAcento">Inglés</span>
+        </div>
+        <div class="footerContainer footerInformacion primario">
+          <span class="blanco hoverAcento">Informacion</span>
+          <span class="hoverAcento">Blog</span>
+          <span class="hoverAcento">Dejanos tu consulta</span>
+          <span class="hoverAcento">Recursos</span>
+        </div>
+        <div class="footerContainer footerContactanos desktop">
+          <span class="blanco hoverAcento">Contactanos</span>
+          <div class="redesFooter">
+            <span class="hoverAcento"
+              ><a href="#"><img class="redes" src="img/whatsapp.svg" /></a
+            ></span>
+            <span class="hoverAcento"
+              ><a href="#"><img class="redes" src="img/twitter.svg" /></a
+            ></span>
+            <span class="hoverAcento"
+              ><a href="#"><img class="redes" src="img/instagram.svg" /></a
+            ></span>
+            <span class="hoverAcento"
+              ><a href="#"><img class="redes" src="img/twitch.svg" /></a
+            ></span>
+            <span class="hoverAcento">
+              <a href="#"><img class="redes" src="img/facebook.svg" /></a
+            ></span>
+          </div>
+        </div>
+      </div>
+      <div class="footerContainerBottom primario desktop">
+        <span class="hoverAcento"
+          >Av. Caseros 3039, Piso 2, CP 1264, Parque Patricios, CABA</span
+        >
+        <span class="hoverAcento">Copyright © 1999-2023 Level Up S.R.L</span>
+      </div>
+    </footer>
+    <!---Script-->
+    <script type="text/javascript" src="js/menu.js"></script>
+    <script type="text/javascript" src="slider.js"></script>
+  </body>
+</html>
