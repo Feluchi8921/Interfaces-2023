@@ -6,7 +6,7 @@
 /*------------------------------Colores-----------------------------*/
 :root {
   --blanco: #f7f7f7f7;
-  --blancoHover:#d3d3d3;
+  --blancoHover: #d3d3d3;
   --negro: #262626;
   --primario: #4e595e;
   --primarioSombra1: #364045;
@@ -44,7 +44,6 @@ h3 {
 p {
   font-size: 16px;
 }
-
 
 /*------------------------------Nav---------------------------------*/
 .navDesktop {
@@ -150,14 +149,13 @@ button.continuar {
   align-items: center;
   padding: 6px;
 }
-button.continuar{
+button.continuar {
   color: var(--blanco);
 }
 
-button.ingresar{
+button.ingresar {
   color: var(--negro);
   font-size: 16px;
-  
 }
 button.continuar {
   background-color: var(--acento);
@@ -191,6 +189,12 @@ img.cruz {
 
 .rotar {
   transform: rotate(-90deg);
+}
+
+.flechaArriba {
+  transform: rotate(-180deg);
+  width: 40px;
+  height: 40px;
 }
 
 .navMobil img.logoHamburguesa,
@@ -263,10 +267,10 @@ img.cruz {
   background: pink;
 }
 /*---------------------------Footer--------------------------------------*/
-footer .desktop{
+footer .desktop {
   display: none;
 }
-.footer{
+.footer {
   background: var(--primarioSombra2);
   color: var(--blanco);
   height: 500px;
@@ -439,18 +443,18 @@ footer .desktop{
     border-radius: 4px;
     align-items: center;
   }
-  button .alinearHorizontal{
+  button .alinearHorizontal {
     display: flex;
     align-items: center;
   }
-.alinearVertical{
-  display: flex;
-  flex-direction: column;
-  margin-left: 20px;
-  margin-bottom: 30px;
-}
+  .alinearVertical {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-bottom: 30px;
+  }
 
-  span.continuarCon{
+  span.continuarCon {
     margin-left: 10px;
   }
   button.continuar {
@@ -503,19 +507,24 @@ footer .desktop{
 
   .breadcrumb,
   section.sectionJuego,
-  section.sectionRecomedados,
   section .sectionComentarios {
     display: flex;
+    margin-bottom: 50px;
   }
 
   section.sectionJuego {
-    height: 1300px;
+    height: 900px;
   }
 
   aside.asideJuegoInstrucciones {
     width: 1000px;
     height: 1040 px;
     margin: 0;
+  }
+
+  section.sectionRecomendados {
+    margin-top: 6px;
+    margin-bottom: 50px;
   }
 
   aside.asideVideos {
@@ -537,7 +546,7 @@ footer .desktop{
     height: 800px;
     background-color: var(--primarioSombra3);
     margin-bottom: 50px;
- 
+    border-radius: 10px;
   }
 
   aside.asideVideos.video img {
@@ -547,8 +556,8 @@ footer .desktop{
   }
 
   .video img {
-    width: 300px;
-    height: 250px;
+    width: 250px;
+    height: 200px;
     border-radius: 6px;
     margin-top: 6px;
     margin-bottom: 20px;
@@ -563,7 +572,7 @@ footer .desktop{
     margin-bottom: 0%;
   }
   img.separadorVideosSugeridos {
-    width: 300px;
+    width: 250px;
     margin-bottom: 20px;
   }
 
@@ -577,11 +586,11 @@ footer .desktop{
     font: "Open-Sans";
     font-size: 18px;
     color: var(--blanco);
+    border-radius: 6px;
   }
 
   /*------Comentarios-----------*/
   div.botoneraComentarios {
-    background-color: var(--primarioSombra3);
     width: 80%;
     height: 50px;
     padding: 20px;
@@ -594,44 +603,48 @@ footer .desktop{
     background-color: var(--primario);
   }
 
-   input.botoneraComentarios {
+  input.botoneraComentarios {
     width: 90%;
-    height: 50px;
+    height: 40px;
     border-radius: 6px;
     display: flex;
     justify-content: flex-end;
     margin-left: 20px;
+    margin-bottom: 40px;
   }
 
-  button.btn-coment{
+  button.btn-coment {
     background-color: var(--primario);
     padding: 6px;
     border-radius: 4px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
   }
 
-  .usuarioComent{
+  .sombra {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+  }
+  .usuarioComent {
     display: flex;
     justify-content: flex-start;
     color: var(--blanco);
     align-items: center;
   }
-  span.usuarioComent.chico{
-      font-size: 12px;
+  span.usuarioComent.chico {
+    font-size: 12px;
   }
-  span.usuarioComent{
+  span.usuarioComent {
     margin-left: 20px;
   }
 
-  .usuarioComent.usuarioComentMarg{
+  .usuarioComent.usuarioComentMarg {
     margin-left: 20px;
     margin-right: 20px;
     margin-top: 5px;
-    
   }
-  button.enviar{
+  button.enviar {
     background-color: var(--blanco);
     width: min-content;
-    height: min-content;
+    height: 40px;
     padding: 6px;
     display: flex;
     align-items: center;
@@ -639,8 +652,8 @@ footer .desktop{
     font: "Open Sans";
     font-size: 16px;
     border-radius: 4px;
-    margin-left: 86.5%;
     font-weight: bolder;
+    margin-bottom: 40px;
   }
   /*------Botonera Redes----------*/
   div.botoneraRedes {
@@ -822,9 +835,9 @@ footer .desktop{
     background-color: var(--estado);
   }
   /*------Footer----------*/
-    footer .desktop{
-      display: flex;
-    }
+  footer .desktop {
+    display: flex;
+  }
   .footer {
     background: var(--primarioSombra2);
     color: var(--blanco);
@@ -860,16 +873,16 @@ footer .desktop{
   .acento2 {
     color: var(--acento2);
   }
-  .acento{
+  .acento {
     color: var(--acento);
   }
 
   .primario {
     color: var(--primario);
   }
-.secundario{
-  color:var(--secundario)
-}
+  .secundario {
+    color: var(--secundario);
+  }
   footer img.logoPagina {
     width: 70px;
     height: 70px;
@@ -892,7 +905,7 @@ footer .desktop{
   }
 
   /*----card mas jugados-------*/
-  .masJugados{
+  .masJugados {
     width: 600px;
     height: 100px;
     display: flex;
@@ -900,101 +913,134 @@ footer .desktop{
     margin-bottom: 10px;
     border-radius: 10px;
   }
-.masJugadosImagen, .masJugadosImagen img{
- width: 150px;
- height: 100px;
- border-radius: 10px 0px 0px 10px;
-}
-
-.masJugadosContenido{
-  width: 100%;
-  background-color: var(--secundario);
-  display: flex;
-  border-radius: 0px 10px 10px 0px;
-}
-.titulo{
-  display: flex;
-  flex-direction: column;
-  margin: 10px;
-  font-size: 18px;
-  color: var(--blanco);
-  margin-right: 200px;
-  font-weight: bolder;
-  width: 100%;
-  
-}
-
-.precio{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-right: 10px;
-}
-.masJugados span.acento{
-  margin: 10px;
-  font-weight: bolder;
-
-}
-
-.parCards{
-  display: flex;
-  justify-content: space-around;
-}
-
-
-
-/*--------------------Efectos-------------------------*/
-.continuar:hover, .estado:hover,.btn-nav:hover, .hoverAcento:hover, .ingresar:hover, .enviar:hover{
-  cursor: pointer;
-}
-.continuar:hover{
-    background-color: var(--estadoHover);
-
+  .masJugadosImagen,
+  .masJugadosImagen img {
+    width: 150px;
+    height: 100px;
+    border-radius: 10px 0px 0px 10px;
   }
-.estado:hover{
-  color: var(--estadoHover);
-}
-.btn-nav:hover, .hoverAcento:hover{
-  color: var(--acento);
-}
 
-.ingresar:hover, .enviar:hover{
-  background-color: var(--blancoHover);
-}
+  .masJugadosContenido {
+    width: 100%;
+    background-color: var(--secundario);
+    display: flex;
+    border-radius: 0px 10px 10px 0px;
+  }
+  .titulo {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    font-size: 18px;
+    color: var(--blanco);
+    margin-right: 200px;
+    font-weight: bolder;
+    width: 100%;
+  }
 
-.subir{
-  color: var(--estado);
-  text-decoration: none;
-  display: block;
-  float:right;
-}
+  .precio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+  }
+  .masJugados span.acento {
+    margin: 10px;
+    font-weight: bolder;
+  }
 
-/*---------Registro Ok-------*/
-.popup{
-  display: none;
-  
-}
+  .parCards {
+    display: flex;
+    justify-content: space-around;
+  }
 
-.visible{
-  display: flex;
-  width: max-content;
-  height: max-content;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
- margin-top: 100px;
- padding: 50px;
-}
-.ocultar{
-  display: none;
-}
+  /*--------------------Efectos-------------------------*/
+  .continuar:hover,
+  .estado:hover,
+  .btn-nav:hover,
+  .hoverAcento:hover,
+  .ingresar:hover,
+  .enviar:hover {
+    cursor: pointer;
+  }
+  .continuar:hover {
+    background-color: var(--estadoHover);
+  }
+  .estado:hover {
+    color: var(--estadoHover);
+  }
+  .btn-nav:hover,
+  .hoverAcento:hover {
+    color: var(--acento);
+  }
 
-.porcentajesCarga img{
-  width: 100px;
-  height: 100x;
-  align-items: center;
-  justify-content: center;
-}
+  .ingresar:hover,
+  .enviar:hover {
+    background-color: var(--blancoHover);
+  }
 
+  .subir {
+    color: var(--estado);
+    text-decoration: none;
+    display: block;
+    float: right;
+  }
 
+  /*---------Registro Ok-------*/
+  .popup {
+    display: none;
+  }
+
+  .visible {
+    display: flex;
+    width: max-content;
+    height: max-content;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    padding: 50px;
+  }
+  .ocultar {
+    display: none;
+  }
+
+  .porcentajesCarga img {
+    width: 100px;
+    height: 100x;
+    align-items: center;
+    justify-content: center;
+  }
+  /*----------Agrandar---------*/
+  .agrandar {
+    background-color: var(--blanco);
+    text-align: center;
+    transition: background-color 0.5s ease-in-out;
+  }
+
+  .agrandar:hover {
+    background-color: var(--estado);
+  }
+  /*---------Scroll Ok-------*/
+  .scroll-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--estado);
+    color: var(--blanco);
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: opacity 0.3s ease;
+  }
+  .scroll-top.scrolling {
+    opacity: 0;
+    transform: translateY(-100px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+  .scroll-top:hover {
+    opacity: 1;
+  }
 }

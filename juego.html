@@ -169,10 +169,10 @@
           <div class="juego">
             <img src="img/juego.svg" alt="4 en linea" />
             <div class="botoneraRedes">
-              <button class="redesJuego">
+              <button class="redesJuego horizontal">
                 <a href="#"><img src="img/email.svg" /></a>
               </button>
-              <button class="redesJuego">
+              <button class="redesJuego horizontal">
                 <a href="#"><img src="img/whatsapp.svg" /></a>
               </button>
               <button class="redesJuego">
@@ -215,7 +215,7 @@
             <img src="img/video3.jpg" alt="video" />
           </div>
           <div class="video">
-            <p class="textoBody">Cómo participar de la copa</p>
+            <p class="textoBody">LLevate la copa</p>
             <img src="img/video4.jpg" alt="video" />
           </div>
         </aside>
@@ -223,7 +223,7 @@
       <section class="sectionRecomendados">
         <h3>Recomendados de la semana</h3>
         <div class="parCards">
-          <div class="masJugados">
+          <div class="masJugados sombra">
             <div class="masJugadosImagen">
               <img src="img/gridPunk.jpg" alt="juego" />
             </div>
@@ -241,7 +241,7 @@
             </div>
           </div>
 
-          <div class="masJugados">
+          <div class="masJugados sombra">
             <div class="masJugadosImagen">
               <img src="img/zombsRoyale.png" alt="juego" />
             </div>
@@ -259,8 +259,9 @@
             </div>
           </div>
         </div>
+
         <div class="parCards">
-          <div class="masJugados">
+          <div class="masJugados sombra">
             <div class="masJugadosImagen">
               <img src="img/spookyIsland.jpg" alt="juego" />
             </div>
@@ -278,7 +279,7 @@
             </div>
           </div>
 
-          <div class="masJugados">
+          <div class="masJugados sombra">
             <div class="masJugadosImagen">
               <img src="img/smashKarts.jpg" alt="juego" />
             </div>
@@ -297,6 +298,7 @@
           </div>
         </div>
       </section>
+      <h3>Calificaciones y Opiniones</h3>
       <section class="sectionComentarios">
         <div class="botoneraComentarios textoBodyChico">
           <button class="btn-nav btn-coment">Todas</button>
@@ -318,12 +320,14 @@
             1 <img src="img/estrellaSolida.svg" />
           </button>
         </div>
-        <input
-          class="botoneraComentarios"
-          type="text"
-          placeholder="Escribe tu experiencia personal (opcional)"
-        />
-        <button class="enviar agrandar">Enviar</button>
+        <div class="alignCenter">
+          <input
+            class="botoneraComentarios"
+            type="text"
+            placeholder="Escribe tu experiencia personal (opcional)"
+          />
+          <button class="enviar agrandar">Enviar</button>
+        </div>
         <div class="alinearVertical">
           <div class="usuarioComent">
             <div class="usuario">
@@ -340,7 +344,7 @@
           </div>
           <div class="usuarioComent">
             <img src="img/estrella2solidas3vacias.svg" />
-            <span class="usuarioComent chico">02/05/2023</span>
+            <span class="usuarioComent chico">02/10/2023</span>
           </div>
           <div class="usuarioComent usuarioComentMarg">
             Cumple con lo que ofrece. Interfaz sencilla de entender, con
@@ -365,7 +369,7 @@
           </div>
           <div class="usuarioComent">
             <img src="img/estrella5solidas.svg" />
-            <span class="usuarioComent chico">02/05/2023</span>
+            <span class="usuarioComent chico">05/10/2023</span>
           </div>
           <div class="usuarioComent usuarioComentMarg">
             Para mí el cuatro en línea cumple con lo que promete y también me
@@ -391,7 +395,7 @@
           </div>
           <div class="usuarioComent">
             <img src="img/estrellas4solidas1vacia.svg" />
-            <span class="usuarioComent chico">03/10/2023</span>
+            <span class="usuarioComent chico">06/10/2023</span>
           </div>
           <div class="usuarioComent usuarioComentMarg">
             Es adictivo. Juego aparentemente simple, pero si quieres ganar mejor
@@ -417,7 +421,7 @@
           </div>
           <div class="usuarioComent">
             <img src="img/estrella5solidas.svg" />
-            <span class="usuarioComent chico">60/10/2023</span>
+            <span class="usuarioComent chico">08/10/2023</span>
           </div>
           <div class="usuarioComent usuarioComentMarg">
             La verdad es muy bueno el juego puedes jugar Online y puedes crear
@@ -431,7 +435,9 @@
         </div>
       </section>
     </div>
-    <button><a href="#" class="subir">Subir</a></button>
+    <button class="scroll-top" type="button">
+      <img class="flechaArriba" src="img/fechaAbajo.svg" />
+    </button>
     <footer class="footer">
       <div class="footerContainerMaster">
         <div class="footerContainer footerLegales primario">
