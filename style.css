@@ -663,6 +663,7 @@ footer .desktop {
     margin: 0%;
     border-radius: 0px 0px 6px 6px;
     padding: 0%;
+    padding-right: 6px;
   }
   .div.botoneraRedes img {
     width: 30px;
