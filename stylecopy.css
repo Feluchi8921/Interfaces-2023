@@ -1069,3 +1069,12 @@ ul.slider img:target {
 .menu a:hover {
   color: var(--blanco);
 }
+
+.circle {
+  width: 2vh;
+  height: 2vh;
+}
+
+.circle:hover {
+  cursor: pointer;
+}
