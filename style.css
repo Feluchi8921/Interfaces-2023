@@ -988,9 +988,13 @@ footer .desktop{
 .ocultar{
   display: none;
 }
-img.load{
-  margin-top: 30px;
-  width: 60px;
-  height: 60px;
+
+.porcentajesCarga img{
+  width: 100px;
+  height: 100x;
+  align-items: center;
+  justify-content: center;
 }
+
+
 }
