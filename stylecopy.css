@@ -62,6 +62,12 @@ nav,
   background: var(--negro);
   opacity: 90%;
 }
+.stick {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
 .btn-nav {
   align-items: center;
   justify-content: flex-start;
@@ -910,6 +916,7 @@ img.cruz {
   .btn-nav:hover,
   .hoverAcento:hover {
     color: var(--acento);
+    cursor: pointer;
   }
 
   .ingresar:hover {
@@ -923,7 +930,6 @@ carousel */
 /* esto tendria que ser el contenedor de nuestro carousels */
 .containerMax {
   display: flex;
-  margin: 5%;
   justify-content: center;
 }
 #carousel1 {
@@ -931,7 +937,8 @@ carousel */
 }
 
 .containerCarrusel {
-  max-width: 1000px;
+  max-width: 80%;
+  margin: 5% 10%;
   position: relative;
 }
 .containerCarrusel i {
@@ -982,6 +989,7 @@ carousel */
   height: 180px;
   background: #318185;
   border-radius: 10px;
+  position: relative;
 }
 .carousel div p {
   font-size: 18px;
@@ -991,10 +999,27 @@ carousel */
 .jugar {
   position: absolute;
   border-radius: 18px;
-  width: 90px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 100px;
   height: 40px;
   background: var(--estado);
+  opacity: 90%;
+  color: var(--negro);
 }
+.jugarOk {
+  cursor: pointer;
+  font-weight: 680;
+}
+.jugarOff {
+  opacity: 70%;
+  pointer-events: none;
+  cursor: not-allowed !important; /* no funciona */
+}
+
 .carousel div img {
   height: 115px;
   width: 230px;
