@@ -993,8 +993,40 @@ carousel */
 }
 .carousel div p {
   font-size: 18px;
-  color: #f7f7f7;
-  margin: 20px;
+  color: var(--blanco);
+  margin: 18px 10px;
+}
+.carousel div img.star {
+  position: absolute;
+  bottom: 23%;
+  left: 3%;
+  width: 55px;
+  height: 20px;
+  object-fit: contain;
+  margin: 0;
+  padding: 0;
+}
+.carousel div img.carritoMas {
+  position: absolute;
+  bottom: 5%;
+  right: 3%;
+  width: 35px;
+  height: 35px;
+  border-radius: 10px;
+}
+.carousel div p.precio {
+  position: absolute;
+  bottom: -5%;
+  right: 18%;
+  color: var(--acento);
+}
+.carousel div p.precioT {
+  position: absolute;
+  bottom: 4%;
+  right: 16%;
+  color: var(--blanco);
+  text-decoration: line-through;
+  font-size: 14px;
 }
 .jugar {
   position: absolute;
@@ -1012,10 +1044,10 @@ carousel */
 }
 .jugarOk {
   cursor: pointer;
-  font-weight: 680;
+  font-weight: 650;
 }
 .jugarOff {
-  opacity: 70%;
+  opacity: 75%;
   pointer-events: none;
   cursor: not-allowed !important; /* no funciona */
 }
@@ -1023,24 +1055,11 @@ carousel */
 .carousel div img {
   height: 115px;
   width: 230px;
-  /* object-fit: cover; */
-
-  /* width: calc(100% / 5); */
+  object-fit: cover;
   border-radius: 10px 10px 0 0;
 }
 .carousel img:first-child {
   margin-left: 0;
-}
-
-@media screen and (max-width: 750px) {
-  .carousel img {
-    width: calc(100% / 3);
-  }
-}
-@media screen and (max-width: 400px) {
-  .carousel img {
-    width: 100%;
-  }
 }
 
 /* slider grande

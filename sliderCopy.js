@@ -1,6 +1,6 @@
 const handleCarousel = (container) => {
   let arrowIcons = document.querySelectorAll(`${container} .arrowIcon`);
-  const carousel = document.querySelector(".carousel");
+  const carousel = document.querySelector(`${container} .carousel`);
 
   let firstImg = carousel.querySelectorAll("img")[0];
   let isDragStart = false;
