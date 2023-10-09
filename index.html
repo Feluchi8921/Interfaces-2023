@@ -3,11 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="stylecopy.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
     <title>Level Up</title>
   </head>
   <body>
-    <header>
+    <header class="stick">
       <nav>
         <!---Barra Nav Mobil-->
         <div class="navMobil">
@@ -261,24 +265,491 @@
         </div>
       </nav>
     </header>
-    <div class="container">
-      <section class="section1 carruselPrincipal carruselHover"></section>
-      <section
-        class="section2 carruselAventura carruselAventuraHover"
-      ></section>
-      <section
-        class="section3 carruselCarreras carruselCarrerasHover"
-      ></section>
-      <section
-        class="section4 carruselMultijugador carruselMultijugadorHover"
-      ></section>
-      <section class="section5 carruselDeporte carruselDeporteHover"></section>
-      <section
-        class="section6 carruselCompradas carruselCompradasHover"
-      ></section>
-      <section class="section7 masJugadosHover"></section>
-      <section class="section8 videoJuego4l"></section>
+
+    <div>
+      <div class="containerGrande">
+        <ul class="slider">
+          <img id="slide1" src="img/marioPortada.jpg" />
+          <img id="slide2" src="img/1v1Battle.jpg" />
+          <img id="slide3" src="img/stickman.jpg" />
+          <img id="slide4" src="img/zombsRoyale.png" />
+        </ul>
+        <div class="sliderNav">
+          <ul class="menu">
+            <li>
+              <a href="#slide1">
+                <svg
+                  class="circle"
+                  width="15"
+                  height="15"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle cx="7.5" cy="7.5" r="7.5" fill="#add1d2" /></svg
+              ></a>
+            </li>
+            <li>
+              <a href="#slide2">
+                <svg
+                  class="circle"
+                  width="15"
+                  height="15"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle cx="7.5" cy="7.5" r="7.5" fill="#add1d2" /></svg
+              ></a>
+            </li>
+            <li>
+              <a href="#slide3">
+                <svg
+                  class="circle"
+                  width="15"
+                  height="15"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle cx="7.5" cy="7.5" r="7.5" fill="#add1d2" /></svg
+              ></a>
+            </li>
+            <li>
+              <a href="#slide4">
+                <svg
+                  class="circle"
+                  width="15"
+                  height="15"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle cx="7.5" cy="7.5" r="7.5" fill="#add1d2" /></svg
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
+
+    <!-- carousel -->
+    <div id="carousel1" class="containerMax">
+      <div class="containerCarrusel">
+        <i id="left" class="fa-solid fa-angle-left arrowIcon"></i>
+        <div class="carousel">
+          <div>
+            <button class="jugarOk jugar">JUGAR</button>
+            <img src="img/1v1Battle.jpg" alt="img" />
+            <p>1v1 Battle</p>
+            <img class="star" src="img/estrella5.svg" alt="estrellas" />
+            <p class="precio">$400</p>
+            <p class="precioT">$800</p>
+            <img class="carritoMas" src="img/carritoMas.svg" alt="carrito" />
+          </div>
+          <div>
+            <button class="jugar jugarOk">JUGAR</button>
+            <img src="img/8ballBillliards.jpg" alt="img" />
+            <p>8 Ball Billliards</p>
+            <img class="star" src="img/estrella1.svg" alt="estrellas" />
+            <p class="precio">$400</p>
+            <p class="precioT">$800</p>
+            <img class="carritoMas" src="img/carritoMas.svg" alt="carrito" />
+          </div>
+          <div>
+            <button class="jugar jugarOff">JUGAR</button>
+            <img src="img/astroDud.jpg" alt="img" />
+            <p>Astro Dud</p>
+            <img class="star" src="img/estrella4.svg" alt="estrellas" />
+            <p class="precio">$400</p>
+            <p class="precioT">$800</p>
+            <img class="carritoMas" src="img/carritoMas.svg" alt="carrito" />
+          </div>
+          <div>
+            <button class="jugar jugarOk">JUGAR</button>
+            <img src="img/badEggs.jpg" alt="img" />
+            <p>Bad Eggs</p>
+            <img class="star" src="img/estrella3.svg" alt="estrellas" />
+            <p class="precio">$400</p>
+            <p class="precioT">$800</p>
+            <img class="carritoMas" src="img/carritoMas.svg" alt="carrito" />
+          </div>
+          <div>
+            <button class="jugar jugarOff">JUGAR</button>
+            <img src="img/basketRandom.jpg" alt="img" />
+            <p>Basket Random</p>
+            <img class="star" src="img/estrella1.svg" alt="estrellas" />
+            <p class="precio">$400</p>
+            <p class="precioT">$800</p>
+            <img class="carritoMas" src="img/carritoMas.svg" alt="carrito" />
+          </div>
+          <div>
+            <button class="jugar jugarOff">JUGAR</button>
+            <img src="img/bloxd.jpg" alt="img" />
+            <p>Bloxd</p>
+            <img class="star" src="img/estrella3.svg" alt="estrellas" />
+            <p class="precio">$400</p>
+            <p class="precioT">$800</p>
+            <img class="carritoMas" src="img/carritoMas.svg" alt="carrito" />
+          </div>
+          <div>
+            <button class="jugar jugarOff">JUGAR</button>
+            <img src="img/crazyDrift.jpg" alt="img" />
+            <p>Crazy Drift</p>
+            <img class="star" src="img/estrella5.svg" alt="estrellas" />
+            <p class="precio">$400</p>
+            <p class="precioT">$800</p>
+            <img class="carritoMas" src="img/carritoMas.svg" alt="carrito" />
+          </div>
+          <div>
+            <button class="jugar jugarOff">JUGAR</button>
+            <img src="img/deadShot.jpg" alt="img" />
+            <p>Dead Shot</p>
+            <img class="star" src="img/estrella4.svg" alt="estrellas" />
+            <p class="precio">$400</p>
+            <p class="precioT">$800</p>
+            <img class="carritoMas" src="img/carritoMas.svg" alt="carrito" />
+          </div>
+          <div>
+            <button class="jugar jugarOff">JUGAR</button>
+            <img src="img/gridPunk.jpg" alt="img" />
+            <p>Grid Punk</p>
+            <img class="star" src="img/estrella3.svg" alt="estrellas" />
+            <p class="precio">$400</p>
+            <p class="precioT">$800</p>
+            <img class="carritoMas" src="img/carritoMas.svg" alt="carrito" />
+          </div>
+          <div>
+            <button class="jugar jugarOff">JUGAR</button>
+            <img src="img/slashRoyal.jpg" alt="img" />
+            <p>Slash Royal</p>
+            <img class="star" src="img/estrella2.svg" alt="estrellas" />
+            <p class="precio">$400</p>
+            <p class="precioT">$800</p>
+            <img class="carritoMas" src="img/carritoMas.svg" alt="carrito" />
+          </div>
+          <div>
+            <button class="jugar jugarOff">JUGAR</button>
+            <img src="img/smashKarts.jpg" alt="img" />
+            <p>Smash Karts</p>
+            <img class="star" src="img/estrella4.svg" alt="estrellas" />
+            <p class="precio">$400</p>
+            <p class="precioT">$800</p>
+            <img class="carritoMas" src="img/carritoMas.svg" alt="carrito" />
+          </div>
+        </div>
+        <i id="right" class="fa-solid fa-angle-right arrowIcon"></i>
+      </div>
+    </div>
+    <div id="carousel2" class="containerMax">
+      <div class="containerCarrusel">
+        <i id="left" class="fa-solid fa-angle-left arrowIcon"></i>
+        <div class="carousel">
+          <div>
+            <button class="jugar">JUGAR</button>
+            <img src="img/1v1Battle.jpg" alt="img" />
+            <p>1v1 Battle</p>
+            <img class="star" src="img/estrella4.svg" alt="estrellas" />
+            <p class="precio">$400</p>
+            <p class="precioT">$800</p>
+            <img class="carritoMas" src="img/carritoMas.svg" alt="carrito" />
+          </div>
+          <div>
+            <button class="jugar">JUGAR</button>
+            <img src="img/8ballBillliards.jpg" alt="img" />
+            <p>Titulo</p>
+            <img class="star" src="img/estrella4.svg" alt="estrellas" />
+            <p class="precio">$400</p>
+            <p class="precioT">$800</p>
+            <img class="carritoMas" src="img/carritoMas.svg" alt="carrito" />
+          </div>
+          <div>
+            <button class="jugar">JUGAR</button>
+            <img src="img/astroDud.jpg" alt="img" />
+            <p>Titulo</p>
+            <img class="star" src="img/estrella4.svg" alt="estrellas" />
+            <p class="precio">$400</p>
+            <p class="precioT">$800</p>
+            <img class="carritoMas" src="img/carritoMas.svg" alt="carrito" />
+          </div>
+          <div>
+            <button class="jugar">JUGAR</button>
+            <img src="img/badEggs.jpg" alt="img" />
+            <p>Titulo</p>
+            <img class="star" src="img/estrella4.svg" alt="estrellas" />
+            <p class="precio">$400</p>
+            <p class="precioT">$800</p>
+            <img class="carritoMas" src="img/carritoMas.svg" alt="carrito" />
+          </div>
+          <div>
+            <button class="jugar">JUGAR</button>
+            <img src="img/basketRandom.jpg" alt="img" />
+            <p>Titulo</p>
+            <img class="star" src="img/estrella4.svg" alt="estrellas" />
+            <p class="precio">$400</p>
+            <p class="precioT">$800</p>
+            <img class="carritoMas" src="img/carritoMas.svg" alt="carrito" />
+          </div>
+          <div>
+            <button class="jugar">JUGAR</button>
+            <img src="img/bloxd.jpg" alt="img" />
+            <p>Titulo</p>
+            <img class="star" src="img/estrella4.svg" alt="estrellas" />
+            <p class="precio">$400</p>
+            <p class="precioT">$800</p>
+            <img class="carritoMas" src="img/carritoMas.svg" alt="carrito" />
+          </div>
+          <div>
+            <button class="jugar">JUGAR</button>
+            <img src="img/crazyDrift.jpg" alt="img" />
+            <p>Titulo</p>
+            <img class="star" src="img/estrella4.svg" alt="estrellas" />
+            <p class="precio">$400</p>
+            <p class="precioT">$800</p>
+            <img class="carritoMas" src="img/carritoMas.svg" alt="carrito" />
+          </div>
+          <div>
+            <button class="jugar">JUGAR</button>
+            <img src="img/deadShot.jpg" alt="img" />
+            <p>Titulo</p>
+            <img class="star" src="img/estrella4.svg" alt="estrellas" />
+            <p class="precio">$400</p>
+            <p class="precioT">$800</p>
+            <img class="carritoMas" src="img/carritoMas.svg" alt="carrito" />
+          </div>
+          <div>
+            <button class="jugar">JUGAR</button>
+            <img src="img/gridPunk.jpg" alt="img" />
+            <p>Titulo</p>
+            <img class="star" src="img/estrella4.svg" alt="estrellas" />
+            <p class="precio">$400</p>
+            <p class="precioT">$800</p>
+            <img class="carritoMas" src="img/carritoMas.svg" alt="carrito" />
+          </div>
+          <div>
+            <button class="jugar">JUGAR</button>
+            <img src="img/slashRoyal.jpg" alt="img" />
+            <p>Titulo</p>
+            <img class="star" src="img/estrella4.svg" alt="estrellas" />
+            <p class="precio">$400</p>
+            <p class="precioT">$800</p>
+            <img class="carritoMas" src="img/carritoMas.svg" alt="carrito" />
+          </div>
+          <div>
+            <button class="jugar">JUGAR</button>
+            <img src="img/smashKarts.jpg" alt="img" />
+            <p>Titulo</p>
+            <img class="star" src="img/estrella4.svg" alt="estrellas" />
+            <p class="precio">$400</p>
+            <p class="precioT">$800</p>
+            <img class="carritoMas" src="img/carritoMas.svg" alt="carrito" />
+          </div>
+        </div>
+        <i id="right" class="fa-solid fa-angle-right arrowIcon"></i>
+      </div>
+    </div>
+    <div id="carousel3" class="containerMax">
+      <div class="containerCarrusel">
+        <i id="left" class="fa-solid fa-angle-left arrowIcon"></i>
+        <div class="carousel">
+          <div>
+            <button class="jugar">JUGAR</button>
+            <img src="img/1v1Battle.jpg" alt="img" />
+            <p>1v1 Battle</p>
+            <img class="star" src="img/estrella4.svg" alt="estrellas" />
+            <p class="precio">$400</p>
+            <p class="precioT">$800</p>
+            <img class="carritoMas" src="img/carritoMas.svg" alt="carrito" />
+          </div>
+          <div>
+            <button class="jugar">JUGAR</button>
+            <img src="img/8ballBillliards.jpg" alt="img" />
+            <p>Titulo</p>
+            <img class="star" src="img/estrella4.svg" alt="estrellas" />
+            <p class="precio">$400</p>
+            <p class="precioT">$800</p>
+            <img class="carritoMas" src="img/carritoMas.svg" alt="carrito" />
+          </div>
+          <div>
+            <button class="jugar">JUGAR</button>
+            <img src="img/astroDud.jpg" alt="img" />
+            <p>Titulo</p>
+            <img class="star" src="img/estrella4.svg" alt="estrellas" />
+            <p class="precio">$400</p>
+            <p class="precioT">$800</p>
+            <img class="carritoMas" src="img/carritoMas.svg" alt="carrito" />
+          </div>
+          <div>
+            <button class="jugar">JUGAR</button>
+            <img src="img/badEggs.jpg" alt="img" />
+            <p>Titulo</p>
+            <img class="star" src="img/estrella4.svg" alt="estrellas" />
+            <p class="precio">$400</p>
+            <p class="precioT">$800</p>
+            <img class="carritoMas" src="img/carritoMas.svg" alt="carrito" />
+          </div>
+          <div>
+            <button class="jugar">JUGAR</button>
+            <img src="img/basketRandom.jpg" alt="img" />
+            <p>Titulo</p>
+            <img class="star" src="img/estrella4.svg" alt="estrellas" />
+            <p class="precio">$400</p>
+            <p class="precioT">$800</p>
+            <img class="carritoMas" src="img/carritoMas.svg" alt="carrito" />
+          </div>
+          <div>
+            <button class="jugar">JUGAR</button>
+            <img src="img/bloxd.jpg" alt="img" />
+            <p>Titulo</p>
+            <img class="star" src="img/estrella4.svg" alt="estrellas" />
+            <p class="precio">$400</p>
+            <p class="precioT">$800</p>
+            <img class="carritoMas" src="img/carritoMas.svg" alt="carrito" />
+          </div>
+          <div>
+            <button class="jugar">JUGAR</button>
+            <img src="img/crazyDrift.jpg" alt="img" />
+            <p>Titulo</p>
+            <img class="star" src="img/estrella4.svg" alt="estrellas" />
+            <p class="precio">$400</p>
+            <p class="precioT">$800</p>
+            <img class="carritoMas" src="img/carritoMas.svg" alt="carrito" />
+          </div>
+          <div>
+            <button class="jugar">JUGAR</button>
+            <img src="img/deadShot.jpg" alt="img" />
+            <p>Titulo</p>
+            <img class="star" src="img/estrella4.svg" alt="estrellas" />
+            <p class="precio">$400</p>
+            <p class="precioT">$800</p>
+            <img class="carritoMas" src="img/carritoMas.svg" alt="carrito" />
+          </div>
+          <div>
+            <button class="jugar">JUGAR</button>
+            <img src="img/gridPunk.jpg" alt="img" />
+            <p>Titulo</p>
+            <img class="star" src="img/estrella4.svg" alt="estrellas" />
+            <p class="precio">$400</p>
+            <p class="precioT">$800</p>
+            <img class="carritoMas" src="img/carritoMas.svg" alt="carrito" />
+          </div>
+          <div>
+            <button class="jugar">JUGAR</button>
+            <img src="img/slashRoyal.jpg" alt="img" />
+            <p>Titulo</p>
+            <img class="star" src="img/estrella4.svg" alt="estrellas" />
+            <p class="precio">$400</p>
+            <p class="precioT">$800</p>
+            <img class="carritoMas" src="img/carritoMas.svg" alt="carrito" />
+          </div>
+          <div>
+            <button class="jugar">JUGAR</button>
+            <img src="img/smashKarts.jpg" alt="img" />
+            <p>Titulo</p>
+            <img class="star" src="img/estrella4.svg" alt="estrellas" />
+            <p class="precio">$400</p>
+            <p class="precioT">$800</p>
+            <img class="carritoMas" src="img/carritoMas.svg" alt="carrito" />
+          </div>
+        </div>
+        <i id="right" class="fa-solid fa-angle-right arrowIcon"></i>
+      </div>
+    </div>
+    <div id="carousel4" class="containerMax">
+      <div class="containerCarrusel">
+        <i id="left" class="fa-solid fa-angle-left arrowIcon"></i>
+        <div class="carousel">
+          <div>
+            <button class="jugar">JUGAR</button>
+            <img src="img/1v1Battle.jpg" alt="img" />
+            <p>1v1 Battle</p>
+            <img class="star" src="img/estrella4.svg" alt="estrellas" />
+            <p class="precio">$400</p>
+            <p class="precioT">$800</p>
+            <img class="carritoMas" src="img/carritoMas.svg" alt="carrito" />
+          </div>
+          <div>
+            <button class="jugar">JUGAR</button>
+            <img src="img/8ballBillliards.jpg" alt="img" />
+            <p>Titulo</p>
+            <img class="star" src="img/estrella4.svg" alt="estrellas" />
+            <p class="precio">$400</p>
+            <p class="precioT">$800</p>
+            <img class="carritoMas" src="img/carritoMas.svg" alt="carrito" />
+          </div>
+          <div>
+            <button class="jugar">JUGAR</button>
+            <img src="img/astroDud.jpg" alt="img" />
+            <p>Titulo</p>
+            <img class="star" src="img/estrella4.svg" alt="estrellas" />
+            <p class="precio">$400</p>
+            <p class="precioT">$800</p>
+            <img class="carritoMas" src="img/carritoMas.svg" alt="carrito" />
+          </div>
+          <div>
+            <button class="jugar">JUGAR</button>
+            <img src="img/badEggs.jpg" alt="img" />
+            <p>Titulo</p>
+            <img class="star" src="img/estrella4.svg" alt="estrellas" />
+            <p class="precio">$400</p>
+            <p class="precioT">$800</p>
+            <img class="carritoMas" src="img/carritoMas.svg" alt="carrito" />
+          </div>
+          <div>
+            <button class="jugar">JUGAR</button>
+            <img src="img/basketRandom.jpg" alt="img" />
+            <p>Titulo</p>
+            <img class="star" src="img/estrella4.svg" alt="estrellas" />
+            <p class="precio">$400</p>
+            <p class="precioT">$800</p>
+            <img class="carritoMas" src="img/carritoMas.svg" alt="carrito" />
+          </div>
+          <div>
+            <button class="jugar">JUGAR</button>
+            <img src="img/bloxd.jpg" alt="img" />
+            <p>Titulo</p>
+            <img class="star" src="img/estrella4.svg" alt="estrellas" />
+            <p class="precio">$400</p>
+            <p class="precioT">$800</p>
+            <img class="carritoMas" src="img/carritoMas.svg" alt="carrito" />
+          </div>
+          <div>
+            <img src="img/crazyDrift.jpg" alt="img" />
+            <p>Titulo</p>
+            <img class="star" src="img/estrella4.svg" alt="estrellas" />
+            <p class="precio">$400</p>
+            <p class="precioT">$800</p>
+            <img class="carritoMas" src="img/carritoMas.svg" alt="carrito" />
+          </div>
+          <div>
+            <img src="img/deadShot.jpg" alt="img" />
+            <p>Titulo</p>
+            <img class="star" src="img/estrella4.svg" alt="estrellas" />
+            <p class="precio">$400</p>
+            <p class="precioT">$800</p>
+            <img class="carritoMas" src="img/carritoMas.svg" alt="carrito" />
+          </div>
+          <div>
+            <img src="img/gridPunk.jpg" alt="img" />
+            <p>Titulo</p>
+            <img class="star" src="img/estrella4.svg" alt="estrellas" />
+            <p class="precio">$400</p>
+            <p class="precioT">$800</p>
+            <img class="carritoMas" src="img/carritoMas.svg" alt="carrito" />
+          </div>
+          <div>
+            <img src="img/slashRoyal.jpg" alt="img" />
+            <p>Titulo</p>
+            <img class="star" src="img/estrella4.svg" alt="estrellas" />
+            <p class="precio">$400</p>
+            <p class="precioT">$800</p>
+            <img class="carritoMas" src="img/carritoMas.svg" alt="carrito" />
+          </div>
+          <div>
+            <img src="img/smashKarts.jpg" alt="img" />
+            <p>Titulo</p>
+            <img class="star" src="img/estrella4.svg" alt="estrellas" />
+            <p class="precio">$400</p>
+            <p class="precioT">$800</p>
+            <img class="carritoMas" src="img/carritoMas.svg" alt="carrito" />
+          </div>
+        </div>
+        <i id="right" class="fa-solid fa-angle-right arrowIcon"></i>
+      </div>
+    </div>
+
     <footer class="footer">
       <div class="footerContainerMaster">
         <div class="footerContainer footerLegales primario">
@@ -339,8 +810,8 @@
         <span class="hoverAcento">Copyright © 1999-2023 Level Up S.R.L</span>
       </div>
     </footer>
-
     <!---Script-->
     <script type="text/javascript" src="js/menu.js"></script>
+    <script type="text/javascript" src="slider.js"></script>
   </body>
 </html>

@@ -7,7 +7,7 @@
     <title>Bienvenido</title>
   </head>
   <body class="form">
-    <div class="containerFondo">
+    <div class="containerFondo doc">
       <img class="logo" src="img/logoPagina.svg" alt="logo" />
       <h1>Bienvenido</h1>
       <div class="containerForm">
@@ -36,7 +36,7 @@
           </div>
         </form>
         <p class="peligro">Tu contraseña debe tener al menos 8 caracteres</p>
-        <button class="continuar">Continuar</button>
+        <button id="boton" class="continuar">Continuar</button>
         <div>
           <span>¿No tenés cuenta? </span><span class="estado">Registrate</span>
         </div>
@@ -71,5 +71,20 @@
         </div>
       </div>
     </div>
+
+    <div class="popup ocultar">
+      <h3>Te has registrado correctamente!!!</h3>
+      <p class="estado">Por favor, inicia sesión para continuar</p>
+      <div class="load"></div>
+
+      <div class="porcentajesCarga">
+        <div class="porc1"><img src="img/25%.svg" /></div>
+        <div class="porc2"><img src="img/50%.svg" /></div>
+        <div class="porc3"><img src="img/60%.svg" /></div>
+        <div class="porc4"><img src="img/75%.svg" /></div>
+        <div class="porc5"><img src="img/100%.svg" /></div>
+      </div>
+    </div>
+    <script type="text/javascript" src="js/popup.js"></script>
   </body>
 </html>
