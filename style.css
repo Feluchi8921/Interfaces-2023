@@ -213,70 +213,66 @@ img.cruz {
 
 /*---------------------------Container Mobil-----------------------------*/
 .container {
-  display: grid;
   margin-left: 3%;
   margin-right: 3%;
-  grid-template-columns: 1;
-  grid-template-rows: repeat(13, 200px);
-  grid-template-areas:
-    "section1"
-    "section1"
-    "section2"
-    "section3"
-    "section4"
-    "section5"
-    "section6"
-    "section7"
-    "section7"
-    "section7"
-    "section8"
-    "section8"
-    "section8";
-}
-
-.section1 {
-  grid-area: section1;
-  background: red;
-}
-.section2 {
-  grid-area: section2;
-  background: blue;
-}
-.section3 {
-  grid-area: section3;
-  background: green;
-}
-.section4 {
-  grid-area: section4;
-  background: yellow;
-}
-.section5 {
-  grid-area: section5;
-  background: purple;
-}
-.section6 {
-  grid-area: section6;
-  background: paleturquoise;
-}
-.section7 {
-  grid-area: section7;
-  background: goldenrod;
-}
-.section8 {
-  grid-area: section8;
-  background: pink;
 }
 /*---------------------------Footer--------------------------------------*/
-footer .desktop {
+.footerOculto {
   display: none;
 }
-.footer {
-  background: var(--primarioSombra2);
+
+.footerMobil {
   color: var(--blanco);
+  display: block;
+  margin-right: auto;
+  margin-left: 10%;
+  margin-right: 10%;
+  font-size: 18px;
+  font-weight: bolder;
+}
+footer{
+  background: var(--primarioSombra2);
   height: 500px;
+  padding-bottom:  30px;
+ 
+}
+.footerContainerMobil span{
+  display: block;
+}
+.footerContainerMobil .redesFooter{
   display: flex;
 }
 
+span.footerAcento{
+  margin-top: 20px;
+  font-weight: normal;
+  
+}
+.redesFooter{
+  display: flex;
+  justify-content: left;
+  padding-right: 6px;
+  margin-bottom: 20px;
+}
+.redesFooter .footerAcento{
+  margin: 8px;
+}
+span.redesFooter{
+  padding: 0%;
+}
+.centrado{
+  margin-top: 40px;
+}
+.footerDesplegable{
+  display: none;
+}
+.footerDesplegable.show{
+  display: block;
+}
+.footerContainerMobil .logoPagina{
+  margin-top: 20px ;
+
+}
 /*---------------------------------------Media Queria Desktop-------------------------------------------------*/
 
 @media only screen and (min-width: 900px) {
@@ -812,6 +808,9 @@ footer .desktop {
     background-color: var(--estado);
   }
   /*------Footer----------*/
+  footer .footerMobil{
+    display: none;
+  }
   footer .desktop {
     display: flex;
   }
@@ -934,7 +933,7 @@ footer .desktop {
   .continuar:hover,
   .estado:hover,
   .btn-nav:hover,
-  .hoverAcento:hover,
+  .hoverAcento:hover, 
   .ingresar:hover,
   .enviar:hover  {
     cursor: pointer;

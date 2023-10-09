@@ -142,3 +142,19 @@ function mostrarPopup() {
 
 boton.addEventListener("click", mostrarPopup);
 });
+
+// Selecciona todos los botones "desplegar"
+const desplegarButtons = document.querySelectorAll(".desplegar");
+
+// Agrega un evento de clic a cada botón "desplegar"
+desplegarButtons.forEach((button) => {
+  button.addEventListener("click", toggleMenu);
+});
+
+function toggleMenu(event) {
+  // Encuentra el elemento hermano .footerDesplegable del botón clickeado
+  const footerDesplegable = event.target.nextElementSibling;
+
+  // Alterna la clase "show" en el elemento .footerDesplegable
+  footerDesplegable.classList.toggle("show");
+}
