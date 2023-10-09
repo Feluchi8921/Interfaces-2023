@@ -509,17 +509,18 @@ footer .desktop {
   section.sectionJuego,
   section .sectionComentarios {
     display: flex;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
   }
 
   section.sectionJuego {
     height: 900px;
+    margin-top: 20px;
   }
 
   aside.asideJuegoInstrucciones {
     width: 1000px;
     height: 1040 px;
-    margin: 0;
+    margin: 0%;
   }
 
   section.sectionRecomendados {
@@ -529,13 +530,31 @@ footer .desktop {
 
   aside.asideVideos {
     width: max-content;
-    height: 1300px;
-    margin-left: 5%;
-  }
-  aside.asideVideos {
-    margin-top: 20px;
+    margin-left: 160px;
   }
 
+  .video {
+    position: relative;
+  }
+  
+  .btn-play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    background-color: transparent;
+    border: transparent;
+    cursor: pointer
+  }
+ 
+  .btn-play img.play {
+    width: 50px;
+    height: 50px;
+    margin: 0%;
+
+  }
+ 
   section.seccionRecomendados {
     width: 100%;
     height: 400px;
@@ -567,9 +586,6 @@ footer .desktop {
     width: 800px;
     height: 600x;
     border-radius: 16px 16px 0px 0px;
-    margin-right: 20px;
-    margin-top: 20px;
-    margin-bottom: 0%;
   }
   img.separadorVideosSugeridos {
     width: 250px;
@@ -579,10 +595,10 @@ footer .desktop {
   aside.siderbarJuegoInstrucciones div.instrucciones {
     /*revisar no me lo toma*/
     background-color: var(--primarioSombra3);
-    width: 760px;
+    width: 780px;
     height: max-content;
     margin-top: 50px;
-    padding: 20px;
+    padding: 10px;
     font: "Open-Sans";
     font-size: 18px;
     color: var(--blanco);
@@ -595,6 +611,7 @@ footer .desktop {
     height: 50px;
     padding: 20px;
     display: flex;
+    margin-bottom: 0%;
   }
 
   div.botoneraComentarios img {
@@ -658,12 +675,11 @@ footer .desktop {
   /*------Botonera Redes----------*/
   div.botoneraRedes {
     background-color: var(--secundarioLuz1);
-    width: 800px;
+    width: 790px;
     height: 50px;
     margin: 0%;
     border-radius: 0px 0px 6px 6px;
-    padding: 0%;
-    padding-right: 6px;
+    padding-right: 10px;
   }
   .div.botoneraRedes img {
     width: 30px;
@@ -676,7 +692,6 @@ footer .desktop {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    margin: 2px;
   }
   button.redesJuego {
     background-color: transparent;
@@ -960,7 +975,7 @@ footer .desktop {
   .btn-nav:hover,
   .hoverAcento:hover,
   .ingresar:hover,
-  .enviar:hover {
+  .enviar:hover  {
     cursor: pointer;
   }
   .continuar:hover {
