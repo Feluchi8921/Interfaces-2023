@@ -2,47 +2,6 @@
 
 //ME aseguro que cargó la página
 window.addEventListener("DOMContentLoaded", () => {
-  //------------------Efecto
-
-  const scrollTopButton = document.querySelector(".scroll-top");
-
-  scrollTopButton.addEventListener("click", () => {
-    window.scrollTo(0, 0);
-    scrollTopButton.classList.add("scrolling");
-  });
-
-  window.addEventListener("scroll", () => {
-    if (window.scrollY > 100) {
-      scrollTopButton.classList.remove("ocultar");
-    } else {
-      scrollTopButton.classList.add("ocultar");
-    }
-  });
-
-  scrollTopButton.classList.add("ocultar");
-
-  //------------------Efecto agrandar--------------
-  const agrandar = document.querySelector(".agrandar");
-  agrandar.addEventListener("click", () => {
-    // Agrandar
-    agrandar.style.transform = "scale(1.2)";
-
-    // Espera un cuarto de segundo
-    setTimeout(() => {
-      // Muestra el botón
-      agrandar.style.opacity = 1;
-      agrandar.style.transform = "scale(1)";
-    }, 1000);
-  });
-  // ------------Desplazar horizontal
-  const horizontal = document.querySelector(".horizontal");
-
-  let x = 0;
-
-  const traslHoriz = setInterval(() => {
-    horizontal.style.transform = `translateX(${x}px)`;
-    x = x === 0 ? 4 : 0;
-  }, 600);
 
   //------- Efecto Mostrar Popup-------------
   const boton = document.querySelector("#boton");
@@ -133,6 +92,53 @@ window.addEventListener("DOMContentLoaded", () => {
     }, 5000);
   }
 
+
+
+
+
+  //------------------Efecto
+
+  const scrollTopButton = document.querySelector(".scroll-top");
+
+  scrollTopButton.addEventListener("click", () => {
+    window.scrollTo(0, 0);
+    scrollTopButton.classList.add("scrolling");
+  });
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 100) {
+      scrollTopButton.classList.remove("ocultar");
+    } else {
+      scrollTopButton.classList.add("ocultar");
+    }
+  });
+
+  scrollTopButton.classList.add("ocultar");
+
+  //------------------Efecto agrandar--------------
+  const agrandar = document.querySelector(".agrandar");
+  agrandar.addEventListener("click", () => {
+    // Agrandar
+    agrandar.style.transform = "scale(1.2)";
+
+    // Espera un cuarto de segundo
+    setTimeout(() => {
+      // Muestra el botón
+      agrandar.style.opacity = 1;
+      agrandar.style.transform = "scale(1)";
+    }, 1000);
+  });
+  // ------------Desplazar horizontal
+  const horizontal = document.querySelector(".horizontal");
+
+  let x = 0;
+
+  const traslHoriz = setInterval(() => {
+    horizontal.style.transform = `translateX(${x}px)`;
+    x = x === 0 ? 4 : 0;
+  }, 600);
+
+  
   const mostrar = document.querySelector(".btn-menu");
 
   //menu responsive
