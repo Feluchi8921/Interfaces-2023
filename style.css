@@ -541,8 +541,13 @@ span.redesFooter{
 
   .juego img {
     width: 800px;
-    height: 600x;
+    height: 600px;
+    object-fit: cover;
     border-radius: 16px 16px 0px 0px;
+  }
+  .juego{
+    margin: 0;
+    padding: 0;
   }
   img.separadorVideosSugeridos {
     width: 250px;
@@ -633,7 +638,7 @@ span.redesFooter{
   div.botoneraRedes {
     background-color: var(--secundarioLuz1);
     width: 790px;
-    height: 50px;
+    /* height: 50px; */
     margin: 0%;
     border-radius: 0px 0px 6px 6px;
     padding-right: 10px;
@@ -641,7 +646,6 @@ span.redesFooter{
   .div.botoneraRedes img {
     width: 30px;
     height: 30px;
-    border-radius: 0%;
     background-color: transparent;
   }
 
@@ -908,7 +912,6 @@ span.redesFooter{
     margin: 10px;
     font-size: 18px;
     color: var(--blanco);
-    margin-right: 200px;
     font-weight: bolder;
     width: 100%;
   }
@@ -928,6 +931,38 @@ span.redesFooter{
     display: flex;
     justify-content: space-around;
   }
+  /*--------------------Mas jugados Index----------------*/
+  .indexMasjugados{
+    margin-left: 10%;
+    margin-right: 10%;
+    max-width: 80%;
+    display: flex;
+    justify-content: space-between;
+  
+  }
+ 
+.mario img, .textoMario{
+  object-fit: cover;
+  margin-left: 10%;
+}
+
+.textoMario{
+  margin-bottom: 30px;
+  background-color: var(--acento);
+  color: var(--blanco);
+  padding: 5px;
+  border-radius: 0px 0px 10px 10px;
+}
+
+.masJugadosCards{
+display: block;
+}
+
+.mario img{
+  height: 350px;
+  width: 90%;
+  border-radius: 10px 10px 0px 0px;
+} 
 
   /*--------------------Efectos-------------------------*/
   .continuar:hover,
