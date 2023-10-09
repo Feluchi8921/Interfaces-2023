@@ -62,6 +62,12 @@ nav,
   background: var(--negro);
   opacity: 90%;
 }
+.stick {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
 .btn-nav {
   align-items: center;
   justify-content: flex-start;
@@ -910,6 +916,7 @@ img.cruz {
   .btn-nav:hover,
   .hoverAcento:hover {
     color: var(--acento);
+    cursor: pointer;
   }
 
   .ingresar:hover {
@@ -923,7 +930,6 @@ carousel */
 /* esto tendria que ser el contenedor de nuestro carousels */
 .containerMax {
   display: flex;
-  margin: 5%;
   justify-content: center;
 }
 #carousel1 {
@@ -931,7 +937,8 @@ carousel */
 }
 
 .containerCarrusel {
-  max-width: 1000px;
+  max-width: 80%;
+  margin: 5% 10%;
   position: relative;
 }
 .containerCarrusel i {
@@ -982,33 +989,77 @@ carousel */
   height: 180px;
   background: #318185;
   border-radius: 10px;
+  position: relative;
 }
 .carousel div p {
   font-size: 18px;
-  color: #f7f7f7;
-  margin: 20px;
+  color: var(--blanco);
+  margin: 18px 10px;
 }
+.carousel div img.star {
+  position: absolute;
+  bottom: 23%;
+  left: 3%;
+  width: 55px;
+  height: 20px;
+  object-fit: contain;
+  margin: 0;
+  padding: 0;
+}
+.carousel div img.carritoMas {
+  position: absolute;
+  bottom: 5%;
+  right: 3%;
+  width: 35px;
+  height: 35px;
+  border-radius: 10px;
+}
+.carousel div p.precio {
+  position: absolute;
+  bottom: -5%;
+  right: 18%;
+  color: var(--acento);
+}
+.carousel div p.precioT {
+  position: absolute;
+  bottom: 4%;
+  right: 16%;
+  color: var(--blanco);
+  text-decoration: line-through;
+  font-size: 14px;
+}
+.jugar {
+  position: absolute;
+  border-radius: 18px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 100px;
+  height: 40px;
+  background: var(--estado);
+  opacity: 90%;
+  color: var(--negro);
+}
+.jugarOk {
+  cursor: pointer;
+  font-weight: 650;
+}
+.jugarOff {
+  opacity: 75%;
+  pointer-events: none;
+  cursor: not-allowed !important; /* no funciona */
+}
+
 .carousel div img {
   height: 115px;
   width: 230px;
-  /* object-fit: cover; */
-
-  /* width: calc(100% / 5); */
+  object-fit: cover;
   border-radius: 10px 10px 0 0;
 }
 .carousel img:first-child {
   margin-left: 0;
-}
-
-@media screen and (max-width: 750px) {
-  .carousel img {
-    width: calc(100% / 3);
-  }
-}
-@media screen and (max-width: 400px) {
-  .carousel img {
-    width: 100%;
-  }
 }
 
 /* slider grande
@@ -1068,4 +1119,13 @@ ul.slider img:target {
 }
 .menu a:hover {
   color: var(--blanco);
+}
+
+.circle {
+  width: 2vh;
+  height: 2vh;
+}
+
+.circle:hover {
+  cursor: pointer;
 }
