@@ -387,6 +387,7 @@ footer .desktop {
   }
 
   /*---------------------------Paginas Form--------------------------------*/
+
   .form .logo {
     width: 106px;
     height: 106px;
@@ -476,13 +477,22 @@ footer .desktop {
   .inputForm {
     display: flex;
     flex-direction: column;
-    width: 100%;
-    align-items: center;
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+
+  .inputForm label{
+    text-align: left;
+    margin-left: 6px;
+  }
+  .formulario{
+    margin-top: 20px;
   }
   input.input {
     width: 300px;
     height: 40px;
     border-radius: 6px;
+    border: 0%;
   }
 
   /*---------------------------Pagina Juegos----------------------------------*/
