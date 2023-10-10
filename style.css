@@ -611,7 +611,14 @@ h3 span{
     font-weight: 400;
     word-wrap: break-word;
   }
+  .precio span img{
+    width: 50px;
+}
 
+h3 span{
+  color: var(--acento);
+  font-size: 24px;
+}
   p.textoBody {
     color: white;
     font-size: 20px;
