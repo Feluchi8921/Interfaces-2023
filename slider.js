@@ -55,3 +55,6 @@ handleCarousel("#carousel1");
 handleCarousel("#carousel2");
 handleCarousel("#carousel3");
 handleCarousel("#carousel4");
+handleCarousel("#carousel5");
+handleCarousel("#carousel6");
+handleCarousel("#carousel7");

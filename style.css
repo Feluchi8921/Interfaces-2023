@@ -935,6 +935,7 @@ span.redesFooter{
   .indexMasjugados{
     margin-left: 10%;
     margin-right: 10%;
+    margin-top: 2%;
     max-width: 80%;
     display: flex;
     justify-content: space-between;
@@ -1174,7 +1175,7 @@ display: block;
 .jugarOff {
   opacity: 75%;
   pointer-events: none;
-  cursor: not-allowed !important; /* no funciona */
+  cursor: not-allowed !important;
 }
 .jugar-click:hover {
   transform: rotate3D(2, 2, 2, 360deg);
@@ -1251,7 +1252,7 @@ a:hover .circle {
 
 /*Font carousel*/
 .h3Primero{
-  margin-top: 50%;
+  margin-top: 45%;
 }
 h3.tituloCategoria{
   margin-left: 10%;
