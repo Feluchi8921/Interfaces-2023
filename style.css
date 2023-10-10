@@ -273,6 +273,9 @@ span.redesFooter{
 .footerDesplegable.show{
   display: block;
 }
+.dDesplegable.show{
+  display: block;
+}
 .footerContainerMobil .logoPagina{
   margin-top: 20px ;
 

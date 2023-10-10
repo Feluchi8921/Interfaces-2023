@@ -158,3 +158,12 @@ function toggleMenu(event) {
   // Alterna la clase "show" en el elemento .footerDesplegable
   footerDesplegable.classList.toggle("show");
 }
+
+//menu responsive
+document.querySelector(".logoHamburguesa").addEventListener("click", toggleMenu);
+document.querySelector(".siriDesplegable").addEventListener("click", toggleMenu);
+document.querySelector(".logoCarritoMas1").addEventListener("click", toggleMenu);
+
+function toggleMenu() {
+    document.querySelector(".desplegable").classList.toggle("show");
+}
