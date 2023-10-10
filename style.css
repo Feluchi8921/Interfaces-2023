@@ -273,6 +273,306 @@ span.redesFooter{
   margin-top: 20px ;
 
 }
+
+/* slider grande
+--------------- o ----------- */
+.containerGrande {
+  display: flex;
+  flex-flow: column wrap;
+}
+ul,
+li {
+  padding: 0;
+  margin: 0;
+  list-style: none inside;
+}
+
+ul.slider {
+  display: flex;
+  justify-content: center;
+}
+ul.slider img {
+  opacity: 0;
+  transition: opacity 1s;
+  position: absolute;
+  top: 10%;
+  width: 380px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+ul.slider img:first-child {
+  opacity: 1;
+}
+ul.slider img:target {
+  opacity: 1;
+}
+.sliderNav {
+  display: flex;
+  justify-content: center;
+}
+.menu {
+  position: relative;
+  top: 240px;
+}
+.menu li {
+  display: inline;
+}
+.menu a {
+  text-decoration: none;
+  padding: 5px;
+  cursor: default;
+}
+a:hover .circle {
+  cursor: pointer;
+  fill: var(--secundarioLuz1);
+}
+
+/*Font carousel*/
+.h3Primero{
+  margin-top: 60%;
+}
+h3.tituloCategoria{
+  margin-left: 10%;
+  color: var(--blanco);
+}
+hr{
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  border-color: var(--acento);
+}
+
+/* --------------carousel -------------------------------------*/
+
+.containerMax {
+  display: flex;
+  justify-content: center;
+}
+
+
+.containerCarrusel {
+  max-width: 80%;
+  margin: 2% 10% 3% 10%;
+  position: relative;
+}
+.containerCarrusel i {
+  top: 50%;
+  height: 35px;
+  width: 35px;
+  cursor: pointer;
+  position: absolute;
+  font-size: 1.3rem;
+  text-align: center;
+  line-height: 35px;
+  background: #f7f7f7;
+  border-radius: 50%;
+  transform: translateY(-50%);
+}
+.containerCarrusel i:first-child {
+  left: -23px;
+  display: none;
+}
+.containerCarrusel i:last-child {
+  right: -23px;
+}
+.containerCarrusel .carousel {
+  font-size: 0;
+  cursor: pointer;
+  overflow: hidden;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+}
+.carousel.dragging {
+  cursor: grab;
+  scroll-behavior: auto;
+}
+.carousel.dragging img {
+  pointer-events: none;
+}
+.carousel .card {
+  display: inline;
+}
+.carousel div {
+  margin-left: 13px;
+  display: inline-block;
+  width: 150px;
+  height: 140px;
+  background: #318185;
+  border-radius: 10px;
+  position: relative;
+}
+
+
+.carousel div p {
+  font-size: 18px;
+  color: var(--blanco);
+  margin: 18px 10px;
+}
+.carousel div img.star {
+  position: absolute;
+  bottom: 23%;
+  left: 3%;
+  width: 55px;
+  height: 20px;
+  object-fit: contain;
+  margin: 0;
+  padding: 0;
+}
+.carousel div img.carritoMas {
+  position: absolute;
+  bottom: 5%;
+  right: 3%;
+  width: 20px;
+  height: 20px;
+  border-radius: 2px;
+}
+.carousel div p.precio {
+  position: absolute;
+  bottom: 7%;
+  right: 3%;
+  color: var(--acento);
+  font-size: 10px;
+}
+.carousel div p.precioT {
+  position: absolute;
+  bottom: 15%;
+  right: 2%;
+  color: var(--blanco);
+  text-decoration: line-through;
+  font-size: 8px;
+}
+.jugar {
+  position: absolute;
+  border-radius: 18px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 70px;
+  height: 30px;
+  background: var(--estado);
+  opacity: 90%;
+  color: var(--negro);
+  transition: transform 2s, background-color 2s, font-size 2s;
+}
+
+.jugarOk {
+  cursor: pointer;
+  font-weight: 650;
+}
+.jugarOff {
+  opacity: 75%;
+  pointer-events: none;
+  cursor: not-allowed !important;
+}
+.jugar-click:hover {
+  transform: rotate3D(2, 2, 2, 360deg);
+  background: #ff0000;
+  font-size: xx-large;
+}
+
+.carousel div img {
+  height: 90px;
+  width: 150px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+.carousel img:first-child {
+  margin-left: 0;
+}
+.carousel div p{
+  font-size: 13px;
+}
+/*--------------------Mas jugados Index----------------*/
+.indexMasjugados{
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 2%;
+  max-width: 80%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+
+}
+
+.mario img, .textoMario{
+object-fit: cover;
+margin-left: 10%;
+}
+
+.textoMario{
+margin-bottom: 30px;
+background-color: var(--acento);
+color: var(--blanco);
+padding: 5px;
+border-radius: 0px 0px 10px 10px;
+}
+
+.masJugadosCards{
+display: block;
+}
+
+.mario img{
+width: 280px;
+border-radius: 10px 10px 0px 0px;
+} 
+/*----card mas jugados-------*/
+.masJugados {
+  width: 320px;
+  height: 50px;
+  display: flex;
+  padding: 0%;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+.masJugadosImagen,
+.masJugadosImagen img {
+  width: 70px;
+  height: 50px;
+  border-radius: 10px 0px 0px 10px;
+}
+
+.masJugadosContenido {
+  width: 100%;
+  background-color: var(--secundario);
+  display: flex;
+  border-radius: 0px 10px 10px 0px;
+}
+.titulo {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  font-size: 14px;
+  color: var(--blanco);
+  font-weight: bolder;
+  width: 100%;
+}
+
+.precio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+.precio span img{
+    width: 25px;
+}
+.masJugados span.acento {
+  margin: 10px;
+  font-weight: bolder;
+}
+
+.parCards {
+  display: flex;
+  justify-content: space-around;
+}
+h3 span{
+  color: var(--acento);
+  font-size: 14px;
+}
 /*---------------------------------------Media Queria Desktop-------------------------------------------------*/
 
 @media only screen and (min-width: 900px) {
@@ -939,6 +1239,7 @@ span.redesFooter{
     max-width: 80%;
     display: flex;
     justify-content: space-between;
+    flex-direction: row;
   
   }
  
