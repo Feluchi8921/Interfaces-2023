@@ -54,7 +54,11 @@ p {
   align-items: center;
   justify-content: space-between;
 }
-
+.stick {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
 nav,
 .navMobil {
   width: 100%;
@@ -500,7 +504,6 @@ hr{
 
 .mario img, .textoMario{
 object-fit: cover;
-margin-left: 10%;
 }
 
 .textoMario{
@@ -516,7 +519,7 @@ display: block;
 }
 
 .mario img{
-width: 280px;
+width: 312px;
 border-radius: 10px 10px 0px 0px;
 } 
 /*----card mas jugados-------*/
@@ -973,6 +976,11 @@ h3 span{
   /*-----------------nav----------------*/
   .navMobil {
     display: none;
+  }
+  .stick {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
   }
   .navDesktop {
     display: flex;
