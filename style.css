@@ -1054,4 +1054,212 @@ display: block;
   .scroll-top:hover {
     opacity: 1;
   }
+
+/* --------------carousel -------------------------------------*/
+
+.containerMax {
+  display: flex;
+  justify-content: center;
+}
+
+
+.containerCarrusel {
+  max-width: 80%;
+  margin: 2% 10% 3% 10%;
+  position: relative;
+}
+.containerCarrusel i {
+  top: 50%;
+  height: 35px;
+  width: 35px;
+  cursor: pointer;
+  position: absolute;
+  font-size: 1.3rem;
+  text-align: center;
+  line-height: 35px;
+  background: #f7f7f7;
+  border-radius: 50%;
+  transform: translateY(-50%);
+}
+.containerCarrusel i:first-child {
+  left: -23px;
+  display: none;
+}
+.containerCarrusel i:last-child {
+  right: -23px;
+}
+.containerCarrusel .carousel {
+  font-size: 0;
+  cursor: pointer;
+  overflow: hidden;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+}
+.carousel.dragging {
+  cursor: grab;
+  scroll-behavior: auto;
+}
+.carousel.dragging img {
+  pointer-events: none;
+}
+.carousel .card {
+  display: inline;
+}
+.carousel div {
+  margin-left: 13px;
+  display: inline-block;
+  width: 230px;
+  height: 180px;
+  background: #318185;
+  border-radius: 10px;
+  position: relative;
+}
+.carousel div p {
+  font-size: 18px;
+  color: var(--blanco);
+  margin: 18px 10px;
+}
+.carousel div img.star {
+  position: absolute;
+  bottom: 23%;
+  left: 3%;
+  width: 55px;
+  height: 20px;
+  object-fit: contain;
+  margin: 0;
+  padding: 0;
+}
+.carousel div img.carritoMas {
+  position: absolute;
+  bottom: 5%;
+  right: 3%;
+  width: 35px;
+  height: 35px;
+  border-radius: 10px;
+}
+.carousel div p.precio {
+  position: absolute;
+  bottom: -5%;
+  right: 18%;
+  color: var(--acento);
+}
+.carousel div p.precioT {
+  position: absolute;
+  bottom: 4%;
+  right: 16%;
+  color: var(--blanco);
+  text-decoration: line-through;
+  font-size: 14px;
+}
+.jugar {
+  position: absolute;
+  border-radius: 18px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 100px;
+  height: 40px;
+  background: var(--estado);
+  opacity: 90%;
+  color: var(--negro);
+  transition: transform 2s, background-color 2s, font-size 2s;
+}
+
+.jugarOk {
+  cursor: pointer;
+  font-weight: 650;
+}
+.jugarOff {
+  opacity: 75%;
+  pointer-events: none;
+  cursor: not-allowed !important; /* no funciona */
+}
+.jugar-click:hover {
+  transform: rotate3D(2, 2, 2, 360deg);
+  background: #ff0000;
+  font-size: xx-large;
+}
+
+.carousel div img {
+  height: 115px;
+  width: 230px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+.carousel img:first-child {
+  margin-left: 0;
+}
+
+/* slider grande
+--------------- o ----------- */
+.containerGrande {
+  display: flex;
+  flex-flow: column wrap;
+}
+ul,
+li {
+  padding: 0;
+  margin: 0;
+  list-style: none inside;
+}
+
+ul.slider {
+  display: flex;
+  justify-content: center;
+}
+ul.slider img {
+  opacity: 0;
+  transition: opacity 1s;
+  position: absolute;
+  top: 10%;
+  margin-left: 10%;
+  margin-right: 10%;
+  width: 80%;
+  height: 600px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+ul.slider img:first-child {
+  opacity: 1;
+}
+ul.slider img:target {
+  opacity: 1;
+}
+.sliderNav {
+  display: flex;
+  justify-content: center;
+}
+.menu {
+  position: relative;
+  top: 650px;
+}
+.menu li {
+  display: inline;
+}
+.menu a {
+  text-decoration: none;
+  padding: 5px;
+  cursor: default;
+}
+a:hover .circle {
+  cursor: pointer;
+  fill: var(--secundarioLuz1);
+}
+
+/*Font carousel*/
+.h3Primero{
+  margin-top: 50%;
+}
+h3.tituloCategoria{
+  margin-left: 10%;
+}
+hr{
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  border-color: var(--acento);
+}
 }
