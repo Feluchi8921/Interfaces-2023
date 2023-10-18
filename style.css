@@ -620,7 +620,7 @@ h3 span{
   font-size: 24px;
 }
   p.textoBody {
-    color: white;
+    color: var(--blanco);
     font-size: 20px;
     font-weight: 400;
     letter-spacing: 1.6px;
@@ -631,6 +631,10 @@ h3 span{
     color: var(--blanco);
     font-weight: 400;
     word-wrap: break-word;
+  }
+  a{
+    text-decoration: none;
+    color: var(--blanco);
   }
 
   .peligro {
@@ -1315,7 +1319,13 @@ display: block;
     display: block;
     float: right;
   }
+  .animar:hover{
+    position: relative;
+    transform: scale(1.01);
+    background-color: var(--acento2);
 
+  }
+    
   /*---------Registro Ok-------*/
   .popup {
     display: none;

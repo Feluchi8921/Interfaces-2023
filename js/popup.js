@@ -79,7 +79,7 @@ function mostrarPopup() {
   setTimeout(ocultarPorc5, 5000);
 
   setTimeout(() => {
-    window.location.href = "index.html";
+    window.location.href = "home.html";
     clearInterval(giro);
   }, 5000);
 
